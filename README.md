@@ -1,1 +1,1 @@
-# StriveBuild-spotfifyprojec
+# StriveBuild-spotifify-project
