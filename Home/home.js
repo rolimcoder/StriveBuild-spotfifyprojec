@@ -1,5 +1,4 @@
 const coversFetched = [
-  'https://i.scdn.co/image/ab6775700000ee85822c8e43c2b458715575b1f2',
   'https://i.scdn.co/image/ab67616d00004851ce85d297fc24805972bd8df1',
   'https://i.scdn.co/image/ab67706c0000bebbc91e4c3c759916efdd7e7f83',
   'https://i.scdn.co/image/ab67706f00000002a76a4d7d1bc77ef3ac475bfe',
