@@ -175,13 +175,15 @@
         <!----------------------  main section  ----------------------->
         <main class="home-main-section px-5 py-3">
           <!----------------------  nav  ----------------------->
-          <div class="container nav-container">
+          <div class="container-fluid nav-container">
             <ul
               id="homeMainNav"
               class="nav justify-content-center align-items-center"
             >
               <li class="nav-item d-md-none">
-                <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
+                <a class="nav-link" id="openSideMenuBtn" href="#"
+                  ><i class="fas fa-bars"></i
+                ></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase active" href="#">Trendings</a>
@@ -199,7 +201,7 @@
                 <a class="nav-link text-uppercase" href="#">discover</a>
               </li>
 
-              <li class="nav-item nav-item-dropdown">
+              <li class="nav-item ml-auto nav-item-dropdown">
                 <div class="dropdown home-dropdown">
                   <button
                     class="btn btn-secondary dropdown-toggle dropleft rounded-pill p-0 pr-lg-3"

@@ -63,3 +63,12 @@ const coversFetched = [
   'https://i.scdn.co/image/ab67706f00000002320f20022a9b6a6e55204a30',
   'https://i.scdn.co/image/ab67616d00004851ce85d297fc24805972bd8df1',
 ];
+
+const openSideMenuBtn = document.getElementById('openSideMenuBtn');
+const homeWrapper = document.querySelector('.home-wrapper');
+const footer = document.getElementById('musicPlayer');
+
+openSideMenuBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  homeWrapper.classList.toggle('translateX');
+});

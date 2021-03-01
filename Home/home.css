@@ -70,7 +70,7 @@ h6 {
 
 /* ASIDE --------- */
 #sideMenuDesktop {
-  width: 250px;
+  width: 300px;
   height: 100vh;
   background-color: var(--dark);
   position: sticky;
@@ -79,9 +79,17 @@ h6 {
   bottom: 0;
 }
 
+.home-wrapper {
+  transition: 0.3s ease;
+}
+
+.translateX {
+  transform: translateX(50%);
+}
+
 /* main section ------------------- */
 .home-main-section {
-  width: calc(100% - 250px);
+  width: calc(100% - 300px);
 }
 @media (max-width: 768px) {
   .home-main-section {
@@ -90,6 +98,12 @@ h6 {
 }
 
 /* navbar---------------------------------- */
+#homeMainNav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+}
 
 /* custom dropdown */
 #userMenu {
@@ -100,7 +114,7 @@ h6 {
   width: 30px;
 }
 #userName {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 /* media per custom dropdown */
 @media (max-width: 992px) {
@@ -115,4 +129,14 @@ h6 {
 
 #homeMainNav .nav-link {
   font-size: 0.5rem;
+}
+
+/* placeholder footer */
+#musicPlayer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10vh;
+  background-color: red;
 }
