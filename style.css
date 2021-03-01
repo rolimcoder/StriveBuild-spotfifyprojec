@@ -1,15 +1,15 @@
 /* g fonts */
 /* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap'); */
 /* fonts */
 :root {
   /* font family */
   /* --ffamily-primary: 'Work Sans', sans-serif; */
-  /* --ffamily-primary: 'Poppins', sans-serif; */
-  --ffamily-primary: 'Roboto', sans-serif;
+  --ffamily-primary: 'Poppins', sans-serif;
+  /* --ffamily-primary: 'Roboto', sans-serif; */
   /* --ffamily-primary: 'Open Sans', sans-serif; */
   --ffamily-secondary: 'Source Code Pro', monospace;
   --dark: #181818;
@@ -36,8 +36,7 @@ html {
 } */
 
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  color: var(--light);
   font-family: var(--ff-primary);
   /* font-size: var(--fs-body); */
   /* line-height: 1.6; */
