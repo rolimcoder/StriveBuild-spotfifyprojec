@@ -42,6 +42,84 @@
     <title>Spotify Clone!</title>
   </head>
   <body>
+
+
+    
+    <div class="container-fluid fixed-bottom">
+      <!--Footer now-playing-bar-->
+      <div class="now-playing-bar container-fluid">
+        <div class="row">
+          <div class="now-playing col-md-3">
+            <div class="container d-flex">
+              <img src="https://via.placeholder.com/56" alt="Cover Album" />
+              <div class="container">
+                <a href="">Song</a>
+                <!--link to Album-->
+                <a href="">Genre</a>
+                <!-- link to genre-->
+              </div>
+              <div class="container">
+                <i class="far fa-heart"></i>
+                <i class="far fa-square"></i>
+              </div>
+            </div>
+          </div>
+          <div class="player-controls col-md-6">
+            <div class="user-buttons row">
+              <div class="random-button col">
+                <i class="fas fa-random"></i>
+              </div>
+              <div class="prev-button col">
+                <i class="fas fa-step-backward"></i>
+              </div>
+              <div class="play-button col">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-pause"></i>
+              </div>
+              <div class="next-button col">
+                <i class="fas fa-step-forward"></i>
+              </div>
+              <div class="repeat-button col">
+                <i class="fas fa-redo-alt"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">time elapsed</div>
+              <div class="col-8">
+                <div class="progress">
+                  <div
+                    class="progress-bar w-75"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-2">duration</div>
+            </div>
+          </div>
+          <div class="extra-controls col-md-3">
+            <div class="row">
+              <div class="col-2 list-next container">
+                <i class="fas fa-list"></i>
+              </div>
+              <div class="col-2 devices container">
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-mobile"></i>
+              </div>
+              <div class="col-8 volume-control container">
+                <i class="fas fa-volume-off"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-volume-mute"></i>
+                <input type="range" name="" id="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

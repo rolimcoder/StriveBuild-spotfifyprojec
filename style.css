@@ -41,6 +41,7 @@ body {
   /* font-size: var(--fs-body); */
   /* line-height: 1.6; */
   line-height: 1.5;
+  background-color: #181818;
 }
 h1,
 h2,
@@ -63,3 +64,9 @@ h6 {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.now-playing-bar{
+  height: 90px;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+} 
