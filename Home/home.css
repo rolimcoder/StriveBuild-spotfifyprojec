@@ -150,7 +150,7 @@ h6 {
 }
 
 #homeMainNav .nav-link {
-  color: var(--dark);
+  color: var(--light);
 }
 /* navbar---------------------------------- */
 #homeMainNav {
@@ -179,9 +179,34 @@ h6 {
 #musicPlayer {
   position: fixed;
   left: 0;
+  right: 0px;
+  bottom: 0;
+  height: 100px;
+  background-color: yellowgreen;
+  transition: 0.3s ease;
+}
+/* on mobile make room for the bottom menu */
+@media (max-width: 768px) {
+  #musicPlayer {
+    bottom: 50px;
+  }
+}
+
+#mobileBottomMenu {
+  position: fixed;
+  left: 0;
   right: 0;
   bottom: 0;
-  height: 10vh;
-  background-color: #000;
-  transition: 0.3s ease;
+  height: 50px;
+  background: purple;
+}
+
+#mobileBottomMenu > .mobile-bottom-menu-wrapper > a {
+  color: var(--light);
+  font-weight: bold;
+  margin-right: 0.6rem;
+}
+
+#mobileBottomMenu {
+  transition: 0.2s ease;
 }

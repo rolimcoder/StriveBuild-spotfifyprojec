@@ -949,11 +949,14 @@ const openSideMenuBtn = document.getElementById('openSideMenuBtn');
 const homeWrapper = document.querySelector('.home-wrapper');
 const footer = document.getElementById('musicPlayer');
 const homeContainer = document.querySelector('.home-container');
+const mobileBottomMenu = document.getElementById('mobileBottomMenu');
 
 openSideMenuBtn.addEventListener('click', (e) => {
   e.preventDefault();
   homeWrapper.classList.toggle('translateX');
   footer.classList.toggle('translateX');
+
+  mobileBottomMenu.classList.toggle('translateX');
 });
 
 // change navbar bg color on scroll
@@ -962,7 +965,7 @@ const homeMainSection = document.querySelector('.home-main-section');
 
 window.addEventListener('scroll', changeNavBg);
 
-function changeNavBg(e) {
+function changeNavBg() {
   console.log(pageYOffset);
   if (pageYOffset > 250) {
     if (navBar.classList.contains('backdrop-blur')) return;
