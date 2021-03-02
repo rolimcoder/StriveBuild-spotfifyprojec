@@ -993,18 +993,18 @@ const sectionsData = [
 sectionsData.forEach((section, idx) => {
   const { sectionName, albums } = section;
   const sectionHTML = `
-  <section id="section-${idx + 1}" class="cards-section">
-    <h6 class="section-name">${sectionName}</h6>
-    <div class="row no-gutters row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-lg-9 mb-4">
+  <section id="section-${idx + 1}" class="cards-section mb-5">
+    <h4 class="section-name text-white font-weight-bold mb-2 display-5">${sectionName}</h4>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-5 row-cols-xl-9 mb-4">
         ${albums
           .map(
             (album) => `
-             <div class="col">
-                <div class="card-custom">
-                  <img src="${album.coverUrl}" class="card-img img-fluid w-100" alt="" />
-                  <div class="card-body-custom">
-                    <h6 class="card-title-custom">${album.title}</h6>
-                    <p class="card-text-custon">random text</p>
+             <div class="col mb-3">
+                <div class="card p-2 shadow ">
+                  <img src="${album.coverUrl}" class="card-img-top rounded" alt="" />
+                  <div class="card-body p-1 pt-2 ">
+                    <h6 class="card-title text-white text-truncate">${album.title}</h6>
+                    <p class="card-text text-muted">random text</p>
                   </div>
                 </div>
               </div>

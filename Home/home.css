@@ -158,8 +158,8 @@ h6 {
   top: 0;
   right: 0;
   left: 0;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -20px;
+  margin-right: -20px;
   z-index: 30;
 }
 
@@ -172,6 +172,17 @@ h6 {
 #nextBtn.nav-link:hover,
 #openSideMenuBtn.nav-link:hover {
   color: #f8f8f8;
+}
+
+/* rowsssss & caaaards */
+.card {
+  background-color: rgb(24, 24, 24);
+  cursor: pointer;
+}
+.card img {
+  min-height: 183px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* ============================= HOME MAIN SECTION END============================== */
