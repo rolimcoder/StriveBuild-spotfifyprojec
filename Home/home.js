@@ -1025,14 +1025,32 @@ sectionsData.forEach((section, idx) => {
 const [homeBtnMobile, searchBtnMobile, libraryBtnMobile] = [
   ...document.querySelectorAll('#mobileBottomMenu a'),
 ];
+const root = document.querySelector(':root');
+
 const mobileMenuBottomBtns = document.querySelectorAll('#mobileBottomMenu a');
 homeBtnMobile.addEventListener('click', goToHome);
 searchBtnMobile.addEventListener('click', goTosearch);
 libraryBtnMobile.addEventListener('click', goTolibrary);
+
+// animate active button
 const makeActive = (target) => {
   mobileMenuBottomBtns.forEach((btn) => btn.classList.remove('active'));
   target.classList.add('active');
+  switch (target.id) {
+    case 'homeBottom':
+      root.style.setProperty('--left-postition-bottom-menu', '-97px');
+      break;
+    case 'searchBottom':
+      root.style.setProperty('--left-postition-bottom-menu', '0px');
+
+      break;
+    case 'libraryBottom':
+      root.style.setProperty('--left-postition-bottom-menu', '+97px');
+
+      break;
+  }
 };
+
 function goToHome(e) {
   e.preventDefault();
   makeActive(e.currentTarget);
