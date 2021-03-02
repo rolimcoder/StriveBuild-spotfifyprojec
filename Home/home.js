@@ -3,12 +3,20 @@ const homeWrapper = document.querySelector('.home-wrapper');
 const footer = document.getElementById('musicPlayer');
 const homeContainer = document.querySelector('.home-container');
 const mobileBottomMenu = document.getElementById('mobileBottomMenu');
+const sideMenuMobile = document.getElementById('sideMenuMobile');
 
 openSideMenuBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  homeWrapper.classList.toggle('translateX');
-  footer.classList.toggle('translateX');
-  mobileBottomMenu.classList.toggle('translateX');
+  homeWrapper.classList.toggle('main-translated-out');
+  footer.classList.toggle('main-translated-out');
+  mobileBottomMenu.classList.toggle('main-translated-out');
+  console.log(sideMenuMobile);
+  sideMenuMobile.classList.toggle('side-mobile-menu-translated-in');
+  if (sideMenuMobile.classList.contains('side-mobile-menu-translated-in')) {
+    sideMenuMobile.style.transform = 'translateX(0)';
+  } else {
+    sideMenuMobile.style.transform = 'translateX(-100%)';
+  }
 });
 
 // change navbar bg color on scroll
