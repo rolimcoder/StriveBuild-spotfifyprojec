@@ -207,14 +207,14 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100px;
+  height: 80px;
   background-color: yellowgreen;
   transition: 0.3s ease;
 }
 /* on mobile make room for the bottom menu */
 @media (max-width: 768px) {
   #musicPlayer {
-    bottom: 50px;
+    bottom: 60px;
   }
 }
 
@@ -223,7 +223,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 50px;
+  height: 60px;
   background: #000;
 }
 

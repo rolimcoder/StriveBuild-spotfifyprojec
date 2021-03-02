@@ -1018,3 +1018,30 @@ sectionsData.forEach((section, idx) => {
   `;
   homeMainSection.insertAdjacentHTML('beforeend', sectionHTML);
 });
+
+///::::::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// ========== mobile menu bottom ================
+///::::::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+const [homeBtnMobile, searchBtnMobile, libraryBtnMobile] = [
+  ...document.querySelectorAll('#mobileBottomMenu a'),
+];
+const mobileMenuBottomBtns = document.querySelectorAll('#mobileBottomMenu a');
+homeBtnMobile.addEventListener('click', goToHome);
+searchBtnMobile.addEventListener('click', goTosearch);
+libraryBtnMobile.addEventListener('click', goTolibrary);
+const makeActive = (target) => {
+  mobileMenuBottomBtns.forEach((btn) => btn.classList.remove('active'));
+  target.classList.add('active');
+};
+function goToHome(e) {
+  e.preventDefault();
+  makeActive(e.currentTarget);
+}
+function goTosearch(e) {
+  e.preventDefault();
+  makeActive(e.currentTarget);
+}
+function goTolibrary(e) {
+  e.preventDefault();
+  makeActive(e.currentTarget);
+}
