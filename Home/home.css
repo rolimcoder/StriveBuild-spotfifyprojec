@@ -178,13 +178,26 @@ h6 {
 .card {
   background-color: rgb(24, 24, 24);
   cursor: pointer;
+  transition: background 0.2s ease;
+}
+.card:hover {
+  background: #282828;
 }
 .card img {
-  min-height: 183px;
-  width: 100%;
+  /* min-height: 20vh; */
+  /* min-width: 20vw; */
   object-fit: cover;
 }
 
+.card-play-btn > i,
+.card-pause-btn > i {
+  background-color: #fff;
+  color: #1db954;
+  /* border: -1px solid #1db954; */
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+}
 /* ============================= HOME MAIN SECTION END============================== */
 
 /* ============================= FOOTER ========================================= */

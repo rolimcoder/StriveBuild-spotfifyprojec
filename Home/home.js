@@ -1000,8 +1000,10 @@ sectionsData.forEach((section, idx) => {
           .map(
             (album) => `
              <div class="col mb-3">
-                <div class="card p-2 shadow ">
-                  <img src="${album.coverUrl}" class="card-img-top rounded" alt="" />
+                <div class="card p-3  shadow">
+                  <img src="${album.coverUrl}" class="card-img-top img-f rounded" alt="" />
+                  <a href="#" class="card-play-btn align-self-end"><i class="fas fa-play-circle fa-3x"></i></a>
+                  <a href="#" class="card-pause-btn align-self-end d-none"><i class="fas fa-pause-circle fa-3x"></i></a>
                   <div class="card-body p-1 pt-2 ">
                     <h6 class="card-title text-white text-truncate">${album.title}</h6>
                     <p class="card-text text-muted">random text</p>
