@@ -137,7 +137,7 @@ h6 {
   }
 }
 
-/* HOME MAIN SECTION ----------------- */
+/* ============================= HOME MAIN SECTION ================================= */
 .home-main-section {
   background: rgb(40, 137, 143);
   background: linear-gradient(
@@ -152,7 +152,7 @@ h6 {
 #homeMainNav .nav-link {
   color: var(--light);
 }
-/* navbar---------------------------------- */
+/* navbar*/
 #homeMainNav {
   position: sticky;
   top: 0;
@@ -173,7 +173,8 @@ h6 {
   color: #f8f8f8;
 }
 
-/* -------------------------------- */
+/* ============================= HOME MAIN SECTION END============================== */
+
 
 /* placeholder footer */
 #musicPlayer {
@@ -198,15 +199,27 @@ h6 {
   right: 0;
   bottom: 0;
   height: 50px;
-  background: purple;
+  background: #000;
 }
 
 #mobileBottomMenu > .mobile-bottom-menu-wrapper > a {
-  color: var(--light);
+  color: #f8f8f883;
   font-weight: bold;
   margin-right: 0.6rem;
+  margin-left: 0.6rem;
+  padding-bottom: 0.1rem;
+}
+
+#mobileBottomMenu > .mobile-bottom-menu-wrapper > a:hover,
+#mobileBottomMenu > .mobile-bottom-menu-wrapper > a:active {
+  color: #f8f8f8;
 }
 
 #mobileBottomMenu {
   transition: 0.2s ease;
+}
+
+#mobileBottomMenu > .mobile-bottom-menu-wrapper > a.active {
+  border-bottom: 2px solid #f8f8f8;
+  border-
 }
