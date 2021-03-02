@@ -948,8 +948,38 @@ const sectionsData = [
 const openSideMenuBtn = document.getElementById('openSideMenuBtn');
 const homeWrapper = document.querySelector('.home-wrapper');
 const footer = document.getElementById('musicPlayer');
+const homeContainer = document.querySelector('.home-container');
 
 openSideMenuBtn.addEventListener('click', (e) => {
   e.preventDefault();
   homeWrapper.classList.toggle('translateX');
+  footer.classList.toggle('translateX');
 });
+
+// change navbar bg color on scroll
+const navBar = document.getElementById('homeMainNav');
+const homeMainSection = document.querySelector('.home-main-section');
+
+window.addEventListener('scroll', changeNavBg);
+
+function changeNavBg(e) {
+  console.log(pageYOffset);
+  if (pageYOffset > 250) {
+    if (navBar.classList.contains('backdrop-blur')) return;
+    navBar.style.transform = 'translateY(-200px)';
+    setTimeout(() => {
+      navBar.classList.remove('bg-transparent');
+      navBar.classList.add('backdrop-blur');
+      navBar.style.transform = 'translateY(0)';
+    }, 100);
+  }
+
+  if (pageYOffset === 0) {
+    navBar.style.transform = 'translateY(-200px)';
+    setTimeout(() => {
+      navBar.style.transform = 'translateY(0)';
+      navBar.classList.add('bg-transparent');
+      navBar.classList.remove('backdrop-blur');
+    }, 100);
+  }
+}
