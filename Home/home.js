@@ -1,3 +1,48 @@
+const openSideMenuBtn = document.getElementById('openSideMenuBtn');
+const homeWrapper = document.querySelector('.home-wrapper');
+const footer = document.getElementById('musicPlayer');
+const homeContainer = document.querySelector('.home-container');
+const mobileBottomMenu = document.getElementById('mobileBottomMenu');
+
+openSideMenuBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  homeWrapper.classList.toggle('translateX');
+  footer.classList.toggle('translateX');
+
+  mobileBottomMenu.classList.toggle('translateX');
+});
+
+// change navbar bg color on scroll
+const navBar = document.getElementById('homeMainNav');
+const homeMainSection = document.querySelector('.home-main-section');
+
+window.addEventListener('scroll', changeNavBg);
+
+function changeNavBg() {
+  console.log(pageYOffset);
+  if (pageYOffset > 250) {
+    if (navBar.classList.contains('backdrop-blur')) return;
+    navBar.style.transform = 'translateY(-200px)';
+    setTimeout(() => {
+      navBar.classList.remove('bg-transparent');
+      navBar.classList.add('backdrop-blur');
+      navBar.style.transform = 'translateY(0)';
+    }, 100);
+  }
+
+  if (pageYOffset === 0) {
+    navBar.style.transform = 'translateY(-200px)';
+    setTimeout(() => {
+      navBar.style.transform = 'translateY(0)';
+      navBar.classList.add('bg-transparent');
+      navBar.classList.remove('backdrop-blur');
+    }, 100);
+  }
+}
+
+///::::::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// ========== row generation ================
+///::::::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const sectionsData = [
   {
     sectionName: 'Ascoltate di recente',
@@ -945,44 +990,29 @@ const sectionsData = [
   },
 ];
 
-const openSideMenuBtn = document.getElementById('openSideMenuBtn');
-const homeWrapper = document.querySelector('.home-wrapper');
-const footer = document.getElementById('musicPlayer');
-const homeContainer = document.querySelector('.home-container');
-const mobileBottomMenu = document.getElementById('mobileBottomMenu');
-
-openSideMenuBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  homeWrapper.classList.toggle('translateX');
-  footer.classList.toggle('translateX');
-
-  mobileBottomMenu.classList.toggle('translateX');
+sectionsData.forEach((section, idx) => {
+  const { sectionName, albums } = section;
+  const sectionHTML = `
+  <section id="section-${idx + 1}" class="cards-section">
+    <h6 class="section-name">${sectionName}</h6>
+    <div class="row no-gutters row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-lg-9 mb-4">
+        ${albums
+          .map(
+            (album) => `
+             <div class="col">
+                <div class="card-custom">
+                  <img src="${album.coverUrl}" class="card-img img-fluid w-100" alt="" />
+                  <div class="card-body-custom">
+                    <h6 class="card-title-custom">${album.title}</h6>
+                    <p class="card-text-custon">random text</p>
+                  </div>
+                </div>
+              </div>
+        `
+          )
+          .join('')}
+    </div>
+  </section>
+  `;
+  homeMainSection.insertAdjacentHTML('beforeend', sectionHTML);
 });
-
-// change navbar bg color on scroll
-const navBar = document.getElementById('homeMainNav');
-const homeMainSection = document.querySelector('.home-main-section');
-
-window.addEventListener('scroll', changeNavBg);
-
-function changeNavBg() {
-  console.log(pageYOffset);
-  if (pageYOffset > 250) {
-    if (navBar.classList.contains('backdrop-blur')) return;
-    navBar.style.transform = 'translateY(-200px)';
-    setTimeout(() => {
-      navBar.classList.remove('bg-transparent');
-      navBar.classList.add('backdrop-blur');
-      navBar.style.transform = 'translateY(0)';
-    }, 100);
-  }
-
-  if (pageYOffset === 0) {
-    navBar.style.transform = 'translateY(-200px)';
-    setTimeout(() => {
-      navBar.style.transform = 'translateY(0)';
-      navBar.classList.add('bg-transparent');
-      navBar.classList.remove('backdrop-blur');
-    }, 100);
-  }
-}
