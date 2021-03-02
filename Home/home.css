@@ -184,8 +184,9 @@ h6 {
   background: #282828;
 }
 .card img {
-  /* min-height: 20vh; */
-  /* min-width: 20vw; */
+  min-height: 30vh;
+  max-height: 30vw;
+
   object-fit: cover;
 }
 
