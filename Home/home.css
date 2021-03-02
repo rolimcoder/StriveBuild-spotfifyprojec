@@ -14,6 +14,8 @@
   --ffamily-secondary: 'Source Code Pro', monospace;
   --dark: #181818;
   --light: #f8f8f8;
+  --transition-time: 0.2s;
+  --left-postition-bottom-menu: -97px;
 }
 
 html {
@@ -95,7 +97,7 @@ h6 {
 }
 /* main section ------------------- */
 .home-wrapper {
-  transition: 0.3s ease;
+  transition: var(--transition-time) ease;
 }
 
 .translateX {
@@ -166,7 +168,7 @@ h6 {
 #prevBtn.nav-link,
 #nextBtn.nav-link,
 #openSideMenuBtn.nav-link {
-  transition: 0.2s ease;
+  transition: var(--transition-time) ease;
 }
 #prevBtn.nav-link:hover,
 #nextBtn.nav-link:hover,
@@ -178,7 +180,7 @@ h6 {
 .card {
   background-color: rgb(24, 24, 24);
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background var(--transition-time) ease;
 }
 .card:hover {
   background: #282828;
@@ -209,7 +211,7 @@ h6 {
   bottom: 0;
   height: 80px;
   background-color: yellowgreen;
-  transition: 0.3s ease;
+  transition: var(--transition-time) ease;
 }
 /* on mobile make room for the bottom menu */
 @media (max-width: 768px) {
@@ -225,6 +227,7 @@ h6 {
   bottom: 0;
   height: 60px;
   background: #000;
+  transition: var(--transition-time) ease;
 }
 
 .mobile-bottom-menu-wrapper {
@@ -232,10 +235,6 @@ h6 {
 }
 
 /* in order to maninuplate via js */
-:root {
-  --left-postition-bottom-menu: -97px;
-}
-
 .mobile-bottom-menu-wrapper::after {
   content: '';
   position: absolute;
@@ -248,7 +247,7 @@ h6 {
   margin-bottom: 0.3rem;
   border-radius: 16%;
   background-color: #f8f8f8;
-  transition: 0.3s ease;
+  transition: var(--transition-time) ease;
 }
 
 #mobileBottomMenu > .mobile-bottom-menu-wrapper > a {
@@ -265,7 +264,7 @@ h6 {
 }
 
 #mobileBottomMenu {
-  transition: 0.2s ease;
+  transition: var(--transition-time) ease;
 }
 #mobileBottomMenu > .mobile-bottom-menu-wrapper > a.active {
   /* border-bottom: 2px solid #f8f8f8; */

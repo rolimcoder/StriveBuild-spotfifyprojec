@@ -8,7 +8,6 @@ openSideMenuBtn.addEventListener('click', (e) => {
   e.preventDefault();
   homeWrapper.classList.toggle('translateX');
   footer.classList.toggle('translateX');
-
   mobileBottomMenu.classList.toggle('translateX');
 });
 
