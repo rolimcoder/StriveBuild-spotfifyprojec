@@ -72,7 +72,7 @@ h6 {
 
 /* ASIDE DESKTOP --------- */
 #sideMenuDesktop {
-  width: 300px;
+  width: 400px;
   height: calc(100vh - 80px);
   background-color: var(--dark);
   position: sticky;
@@ -184,7 +184,7 @@ h6 {
 }
 
 /* rowsssss & caaaards */
-.card {
+/* .card {
   background-color: rgb(24, 24, 24);
   cursor: pointer;
   transition: background var(--transition-time) ease;
@@ -195,8 +195,52 @@ h6 {
 .card img {
   min-height: 30vh;
   max-height: 30vw;
-
   object-fit: cover;
+} */
+/* .cards-section .row {
+  overflow-x: auto;
+} */
+.card-custom {
+  height: 25vmin;
+  width: 18vmin;
+  background-color: rgb(24, 24, 24);
+}
+
+.card-image-wrapper img {
+  width: 100%;
+}
+
+.card-image-wrapper {
+  height: 18vmin;
+  width: 100%;
+}
+.card-body-custom {
+  height: 7vmin;
+}
+
+@media (max-width: 767px) {
+  .row-albums {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .card-custom {
+    height: 41vmin;
+    width: 30vmin;
+  }
+
+  .card-image-wrapper {
+    height: 30vmin;
+  }
+  .card-body-custom {
+    height: 11vmin;
+  }
+}
+
+.card-title-custom {
+  font-size: 0.8rem;
+}
+.card-text-custom {
+  font-size: 0.7rem;
 }
 
 .card-play-btn > i,
@@ -221,7 +265,7 @@ h6 {
   transition: var(--transition-time) ease;
 }
 /* on mobile make room for the bottom menu */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #musicPlayer {
     bottom: 60px;
   }

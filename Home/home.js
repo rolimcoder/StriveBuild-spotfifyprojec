@@ -1002,18 +1002,20 @@ sectionsData.forEach((section, idx) => {
   const sectionHTML = `
   <section id="section-${idx + 1}" class="cards-section mb-5">
     <h4 class="section-name text-white font-weight-bold mb-2 display-5">${sectionName}</h4>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-5 row-cols-xl-9 mb-4">
+    <div class="d-flex flex-md-wrap row-albums mb-4">
         ${albums
           .map(
-            (album) => `
-             <div class="col mb-3">
-                <div class="card p-3 shadow">
-                  <img src="${album.coverUrl}" class="card-img-top img-f rounded" alt="" />
-                  <a href="#" class="card-play-btn align-self-end"><i class="fas fa-play-circle fa-3x"></i></a>
-                  <a href="#" class="card-pause-btn align-self-end d-none"><i class="fas fa-pause-circle fa-3x"></i></a>
-                  <div class="card-body p-1 pt-2 ">
-                    <h6 class="card-title text-white text-truncate">${album.title}</h6>
-                    <p class="card-text text-muted">random text</p>
+            (album, jdx) => `
+             <div class="px-2 mb-3">
+                <div class="card-custom shadow">
+                  <div class="card-image-wrapper d-flex flex-column p-2">
+                    <img src="${album.coverUrl}" class="img-fluid rounded" alt="" />
+                    <a href="#" class="card-play-btn align-self-end d-none"><i class="fas fa-play-circle fa-3x"></i></a>
+                    <a href="#" class="card-pause-btn align-self-end d-none"><i class="fas fa-pause-circle fa-3x"></i></a>
+                  </div>
+                  <div class="card-body-custom p-3">
+                    <h6 class="card-title-custom text-white text-truncate">${album.title}</h6>
+                    <p class="card-text-custom text-muted">random text</p>
                   </div>
                 </div>
               </div>
