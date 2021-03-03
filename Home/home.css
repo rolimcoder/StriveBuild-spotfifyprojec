@@ -180,7 +180,13 @@ h6 {
 #prevBtn.nav-link:hover,
 #nextBtn.nav-link:hover,
 #openSideMenuBtn.nav-link:hover {
-  color: #f8f8f8;
+  transform: scale(1.1);
+}
+
+#prevBtn.nav-link:active,
+#nextBtn.nav-link:active,
+#openSideMenuBtn.nav-link:active {
+  transform: scale(1);
 }
 
 /* rowsssss & caaaards */
