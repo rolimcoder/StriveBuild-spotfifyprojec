@@ -1,4 +1,4 @@
-let urls = [
+const urls = [
   "https://t.scdn.co/images/ad4d5c268a214f78920517e76e6ed107.jpeg",
   "https://t.scdn.co/images/68433b0ee5b5465b8e926c42b84cbcdb.jpeg",
   "https://t.scdn.co/images/4b7472015a274eadbc00119f5141e548.jpeg",
@@ -41,8 +41,7 @@ let urls = [
   "https://i.scdn.co/image/ab676d63000014756cbb07bea33ce82336db23d2"
 ]
 
-
-let imgText = [
+const imgText = [
   "Podcasts",
   "Made For You",
   "Charts",
@@ -84,7 +83,7 @@ let imgText = [
   "Punk",
   "Tastemakers",
 ]
- let arrofColor = ["f3b391","4281a4","a6d49f","a96da3","3a3042","ff69eb","ff86c8","ffa3a5","ffbf81","ffdc5e","d5dfe5","c9b1bd","b49594","7f9172","567568","828a95","ceeaf7","ccd7e4","d5c9df","dcb8cb","3c493f","7e8d85","b3bfb8","f0f7f4","a2e3c4","9f9aa4","e7cfcd","cfd8d7","b5c9c3","cab1bd","9f7e69","d2bba0","f2efc7","f7ffe0","ffeee2","466365","b49a67","ceb3ab","c4c6e7","baa5ff"]
+ const arrofColor = ["f3b391","4281a4","a6d49f","a96da3","3a3042","ff69eb","ff86c8","ffa3a5","ffbf81","ffdc5e","d5dfe5","c9b1bd","b49594","7f9172","567568","828a95","ceeaf7","ccd7e4","d5c9df","dcb8cb","3c493f","7e8d85","b3bfb8","f0f7f4","a2e3c4","9f9aa4","e7cfcd","cfd8d7","b5c9c3","cab1bd","9f7e69","d2bba0","f2efc7","f7ffe0","ffeee2","466365","b49a67","ceb3ab","c4c6e7","baa5ff"]
 
  const searchDatas = [...Array(40)].map((element, idx) => {
    return({
@@ -93,4 +92,4 @@ let imgText = [
       url:  urls[idx]
    })
  })
- console.log(searchDatas)
+ 
