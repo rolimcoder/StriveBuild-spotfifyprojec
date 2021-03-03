@@ -42,7 +42,7 @@ function changeNavBg() {
 openSideMenuBtn.addEventListener('click', (e) => {
   e.preventDefault();
   homeWrapper.classList.toggle('main-translated-out');
-  footer.classList.toggle('main-translated-out');
+  musicPlayer.classList.toggle('main-translated-out');
   mobileBottomMenu.classList.toggle('main-translated-out');
   console.log(sideMenuMobile);
   sideMenuMobile.classList.toggle('side-mobile-menu-translated-in');

@@ -208,21 +208,7 @@
 /* ============================= HOME MAIN SECTION END============================== */
 
 /* ============================= FOOTER ========================================= */
-#musicPlayer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 80px;
-  background-color: yellowgreen;
-  transition: var(--transition-time) ease;
-}
-/* on mobile make room for the bottom menu */
-@media (max-width: 767px) {
-  #musicPlayer {
-    bottom: 60px;
-  }
-}
+
 /* mobile menu bottom */
 #mobileBottomMenu {
   position: fixed;

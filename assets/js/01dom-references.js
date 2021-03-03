@@ -1,6 +1,6 @@
 const openSideMenuBtn = document.getElementById('openSideMenuBtn');
 const homeWrapper = document.querySelector('.home-wrapper');
-const footer = document.getElementById('musicPlayer');
+const musicPlayer = document.getElementById('musicPlayer');
 const homeContainer = document.querySelector('.home-container');
 const mobileBottomMenu = document.getElementById('mobileBottomMenu');
 const sideMenuMobile = document.getElementById('sideMenuMobile');
