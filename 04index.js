@@ -1,11 +1,17 @@
 ///::::::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // ========== login scripts ================
 ///::::::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-window.onload = () => {
+loginBtn.addEventListener('click', () => {
   login.classList.add('d-none');
   home.classList.remove('d-none');
   showHomePage();
-};
+});
+
+/* window.onload = () => {
+  login.classList.add('d-none');
+  home.classList.remove('d-none');
+  showHomePage();
+}; */
 
 // change navbar color on scroll
 window.addEventListener('scroll', changeNavBg);
