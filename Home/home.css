@@ -72,7 +72,7 @@ h6 {
 
 /* ASIDE DESKTOP --------- */
 #sideMenuDesktop {
-  width: 400px;
+  width: 500px;
   height: calc(100vh - 80px);
   background-color: var(--dark);
   position: sticky;
@@ -125,11 +125,11 @@ h6 {
   background-color: #000;
 }
 #userImg {
-  height: 30px;
-  width: 30px;
+  height: 55px;
+  width: 55px;
 }
 #userName {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 /* media per custom dropdown */
 @media (max-width: 992px) {
@@ -204,6 +204,10 @@ h6 {
   height: 25vmin;
   width: 18vmin;
   background-color: rgb(24, 24, 24);
+  transition: var(--transition-time);
+}
+.card-custom:hover {
+  background: #282828;
 }
 
 .card-image-wrapper img {
@@ -237,10 +241,10 @@ h6 {
 }
 
 .card-title-custom {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 .card-text-custom {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .card-play-btn > i,

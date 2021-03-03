@@ -4,6 +4,7 @@ const footer = document.getElementById('musicPlayer');
 const homeContainer = document.querySelector('.home-container');
 const mobileBottomMenu = document.getElementById('mobileBottomMenu');
 const sideMenuMobile = document.getElementById('sideMenuMobile');
+const jsEntryPoint = document.getElementById('jsEntryPoint');
 
 openSideMenuBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -997,15 +998,17 @@ const sectionsData = [
   },
 ];
 
-sectionsData.forEach((section, idx) => {
-  const { sectionName, albums } = section;
-  const sectionHTML = `
+function showHomePage() {
+  jsEntryPoint.innerHTML = '';
+  sectionsData.forEach((section, idx) => {
+    const { sectionName, albums } = section;
+    const sectionHTML = `
   <section id="section-${idx + 1}" class="cards-section mb-5">
-    <h4 class="section-name text-white font-weight-bold mb-2 display-5">${sectionName}</h4>
+    <h4 class="section-name text-white font-weight-bold mb-2 display-5 pl-2">${sectionName}</h4>
     <div class="d-flex flex-md-wrap row-albums mb-4">
         ${albums
           .map(
-            (album, jdx) => `
+            (album) => `
              <div class="px-2 mb-3">
                 <div class="card-custom shadow">
                   <div class="card-image-wrapper d-flex flex-column p-2">
@@ -1025,8 +1028,10 @@ sectionsData.forEach((section, idx) => {
     </div>
   </section>
   `;
-  homeMainSection.insertAdjacentHTML('beforeend', sectionHTML);
-});
+    jsEntryPoint.insertAdjacentHTML('beforeend', sectionHTML);
+  });
+}
+showHomePage();
 
 ///::::::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // ========== mobile menu bottom ================
