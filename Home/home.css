@@ -1,0 +1,359 @@
+/* g fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap'); */
+/* fonts */
+:root {
+  /* font family */
+  /* --ffamily-primary: 'Work Sans', sans-serif; */
+  --ffamily-primary: 'Poppins', sans-serif;
+  /* --ffamily-primary: 'Roboto', sans-serif; */
+  /* --ffamily-primary: 'Open Sans', sans-serif; */
+  --ffamily-secondary: 'Source Code Pro', monospace;
+  --dark: #181818;
+  --light: #f8f8f8;
+  --transition-time: 0.2s;
+  --left-postition-bottom-menu: -97px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+/* 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+} */
+
+body {
+  color: var(--light);
+  color: var(--dark);
+  font-family: var(--ff-primary);
+  /* font-size: var(--fs-body); */
+  /* line-height: 1.6; */
+  line-height: 1.5;
+  background-color: #1818184b;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
+.backdrop-blur {
+  background-color: rgba(2, 1, 1, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------- */
+
+/* ASIDE DESKTOP --------- */
+#sideMenuDesktop {
+  width: 500px;
+  height: calc(100vh - 80px);
+  background-color: var(--dark);
+  position: sticky;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.side-menu-header {
+  height: 30%;
+  width: 100%;
+  background-color: rgba(0, 139, 139, 0.568);
+}
+.side-menu-main {
+  height: 65%;
+  width: 100%;
+  background-color: rgba(139, 0, 0, 0.301);
+}
+.side-menu-footer {
+  height: 5%;
+  width: 100%;
+  background-color: rgba(139, 125, 0, 0.349);
+}
+
+/* custom nav */
+.side-menu-main.user-playlists::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.side-menu-main.user-playlists::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 169, 169, 0.486);
+  border-radius: 8px;
+  width: 20px;
+}
+/* main section ------------------- */
+.home-wrapper {
+  transition: var(--transition-time) ease;
+}
+
+.home-main-section {
+  width: calc(100% - 300px);
+}
+@media (max-width: 768px) {
+  .home-main-section {
+    width: 100%;
+  }
+}
+
+/* custom dropdown */
+#userMenu {
+  background-color: #000;
+}
+#userImg {
+  height: 55px;
+  width: 55px;
+}
+#userName {
+  font-size: 1.2rem;
+}
+/* media per custom dropdown */
+@media (max-width: 992px) {
+  .dropdown-menu {
+    left: -600%;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .nav-item-dropdown {
+    padding: 10px 20px;
+  }
+}
+
+/* ============================= HOME MAIN SECTION ================================= */
+.home-main-section {
+  background: rgb(40, 137, 143);
+  background: linear-gradient(
+    175deg,
+    rgba(40, 137, 143, 1) 8%,
+    rgba(47, 58, 106, 0.9911151960784313) 42%,
+    rgba(6, 18, 22, 1) 67%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+#homeMainNav .nav-link {
+  color: var(--light);
+}
+/* navbar*/
+#homeMainNav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  z-index: 30;
+}
+
+#prevBtn.nav-link,
+#nextBtn.nav-link,
+#openSideMenuBtn.nav-link {
+  transition: var(--transition-time) ease;
+}
+#prevBtn.nav-link:hover,
+#nextBtn.nav-link:hover,
+#openSideMenuBtn.nav-link:hover {
+  transform: scale(1.1);
+}
+
+#prevBtn.nav-link:active,
+#nextBtn.nav-link:active,
+#openSideMenuBtn.nav-link:active {
+  transform: scale(1);
+}
+
+/* rowsssss & caaaards */
+/* .card {
+  background-color: rgb(24, 24, 24);
+  cursor: pointer;
+  transition: background var(--transition-time) ease;
+}
+.card:hover {
+  background: #282828;
+}
+.card img {
+  min-height: 30vh;
+  max-height: 30vw;
+  object-fit: cover;
+} */
+/* .cards-section .row {
+  overflow-x: auto;
+} */
+.card-custom {
+  height: 25vmin;
+  width: 18vmin;
+  background-color: rgb(24, 24, 24);
+  transition: var(--transition-time);
+}
+.card-custom:hover {
+  background: #282828;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+}
+
+.card-image-wrapper {
+  height: 18vmin;
+  width: 100%;
+}
+.card-body-custom {
+  height: 7vmin;
+}
+
+@media (max-width: 767px) {
+  .row-albums {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .card-custom {
+    height: 41vmin;
+    width: 30vmin;
+  }
+
+  .card-image-wrapper {
+    height: 30vmin;
+  }
+  .card-body-custom {
+    height: 11vmin;
+  }
+}
+
+.card-title-custom {
+  font-size: 1.4rem;
+}
+.card-text-custom {
+  font-size: 1rem;
+}
+
+.card-play-btn > i,
+.card-pause-btn > i {
+  background-color: #fff;
+  color: #1db954;
+  /* border: -1px solid #1db954; */
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+}
+/* ============================= HOME MAIN SECTION END============================== */
+
+/* ============================= FOOTER ========================================= */
+#musicPlayer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background-color: yellowgreen;
+  transition: var(--transition-time) ease;
+}
+/* on mobile make room for the bottom menu */
+@media (max-width: 767px) {
+  #musicPlayer {
+    bottom: 60px;
+  }
+}
+/* mobile menu bottom */
+#mobileBottomMenu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  background: #000;
+  transition: var(--transition-time) ease;
+}
+
+.mobile-bottom-menu-wrapper {
+  position: relative;
+}
+
+/* in order to maninuplate via js */
+.mobile-bottom-menu-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: var(--left-postition-bottom-menu);
+  width: 40px;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  border-radius: 16%;
+  background-color: #f8f8f8;
+  transition: var(--transition-time) ease;
+}
+
+#mobileBottomMenu > .mobile-bottom-menu-wrapper > a {
+  color: #f8f8f883;
+  font-weight: bold;
+  margin-right: 0.6rem;
+  margin-left: 0.6rem;
+  padding-bottom: 0.1rem;
+}
+
+#mobileBottomMenu > .mobile-bottom-menu-wrapper > a:hover,
+#mobileBottomMenu > .mobile-bottom-menu-wrapper > a:active {
+  color: #f8f8f8;
+}
+
+#mobileBottomMenu {
+  transition: var(--transition-time) ease;
+}
+#mobileBottomMenu > .mobile-bottom-menu-wrapper > a.active {
+  /* border-bottom: 2px solid #f8f8f8; */
+
+  color: #f8f8f8;
+}
+
+/* ============================= FOOTER END 🦶🏻================================== */
+
+/* ============================= SIDE MENU MOBILE 🥗📲================================= */
+
+#sideMenuMobile {
+  height: 100vh;
+  background: purple;
+  width: calc(100vw - 20%);
+  position: fixed;
+  top: 0;
+  transform: translateX(-100%);
+  transition: var(--transition-time) ease;
+}
+
+/* ============================= SIDE MENU MOBILE END ================================ */
+
+/* animation playground 😄 🎮 */
+.main-translated-out {
+  transform: translateX(80%);
+}
+
+.side-mobile-menu-translated-in {
+  transform: translateX(0);
+}
