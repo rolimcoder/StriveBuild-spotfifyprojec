@@ -113,4 +113,13 @@ h6 {
   background: #28a745;
 }
 
+@media (max-width: 575.98px) {
+  .now-playing-bar{
+    height: 45px;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    color: #b3b3b3;
+  } 
+}
+
 /*++++ Here End Added for David-Z*/

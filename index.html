@@ -45,50 +45,50 @@
     <div class="container-fluid" style="height: 100vh;">
       <!--Here Start Footer now-playing-bar-->
       <div
-        class="now-playing-bar container fixed-bottom"
+        class="now-playing-bar px-0 container-fluid fixed-bottom"
       >
-        <div class="row align-items-center justify-content-around">
+      <!--Progress bar in top for sm-->
+        <div class="container-fluid px-0 d-sm-none">
+          <div class="row no-gutters">
+            <div class="col-12" style="width: inherit;">
+              <div class="progress" style="height: 2px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Here end prgress bar sm-->
+        <div class="row px-4 align-items-center justify-content-around">
           <!--Here start Small devices now-playing-bar-->
           <div class="col-11 m-auto d-flex align-items-center justify-content-center d-sm-none d-md-none d-lg-none" style="height: 100%;">
-            <div class="row">
-              <!-- button collapsable xs-->
-              <!-- <div class="container">
-                <div class="btn-group dropup">
-                  <button
-                    type="button"
-                    class="my-btn btn btn-success dropdown-toggle"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  ></button>
-                  <div class="dropdown-menu">
-                    <div
-                      class="col px-1 py-1 list-next d-flex justify-content-center align-items-center"
-                    >
-                      <i class="fas fa-list px-2"></i>
-                    </div>
-                    <div
-                      class="col px-1 py-1 devices d-flex justify-content-center align-items-center"
-                    >
-                      <i class="fas fa-desktop"></i>
-                      <i class="fas fa-mobile"></i>
-                    </div>
-                    <div
-                      class="col px-1 py-1 volume-control d-flex justify-content-center align-items-center"
-                    >
-                      <i class="fas fa-volume-up px-2"></i>
-                    </div>
+            <div class="row no-gutters" style="width: inherit;">
+              <div class="col-12 d-flex justify-content-around" style="width: inherit;">
+                <div class="col d-flex col-3 align-items-center">
+                  <img src="https://via.placeholder.com/39" alt="Cover Album" />
+                </div>
+                <div class="col d-flex px-0 col-5 np-links-to align-items-center">
+                  <a class="ml-2" href="">Song</a>
+                  <!--link to Album-->
+                </div>
+                <div class="col d-flex col-4 align-items-center justify-content-between">
+                  <div class="d-flex px-2">
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-mobile"></i>
+                    <i class="fab fa-bluetooth-b d-none"></i>
+                  </div>
+                  <div class="d-flex px-2">
+                    <i class="fas fa-play"></i>
+                    <i class="fas fa-pause d-none"></i>
                   </div>
                 </div>
-              </div> -->
-              <!-- end of button -->
+              </div>
             </div>
           </div>
           <!--Here end Small devices now-playing-->
           <div class="col now-playing px-2 d-none d-sm-block col-sm-4 col-md-4 col-lg-3">
             <div class="row align-items-center">
                 <div class="col px-0 col-sm-4">
-                  <img src="https://via.placeholder.com/56" alt="Cover Album" />
+                  <img class="ml-2" src="https://via.placeholder.com/56" alt="Cover Album" />
                 </div>
                 <div class="col px-0 col-sm-3 np-links-to">
                     <a href="">Song</a>
