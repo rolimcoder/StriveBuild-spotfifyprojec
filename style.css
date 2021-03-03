@@ -1,17 +1,18 @@
-/* g fonts */
-/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap'); */
 /* fonts */
+@font-face {
+  font-family: 'Circular';
+  src: url(/assets/fonts/lineto-circular-black.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Circular Pro';
+  src: url(/assets/fonts/lineto-circular-pro-medium.ttf);
+  font-weight: 500;
+}
+
 :root {
-  /* font family */
-  /* --ffamily-primary: 'Work Sans', sans-serif; */
-  --ffamily-primary: 'Poppins', sans-serif;
-  /* --ffamily-primary: 'Roboto', sans-serif; */
-  /* --ffamily-primary: 'Open Sans', sans-serif; */
-  --ffamily-secondary: 'Source Code Pro', monospace;
+  --ffamily-bold: 'Circular', sans-serif;
+  --ffamily-medium: 'Circular Pro', sans-serif;
   --dark: #181818;
   --light: #f8f8f8;
 }
@@ -28,19 +29,11 @@ html {
   background-size: cover;
 } */
 
-/* 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-} */
-
 body {
-  color: var(--light);
-  font-family: var(--ff-primary);
   /* font-size: var(--fs-body); */
   /* line-height: 1.6; */
   line-height: 1.5;
+  font-family: var(--ffamily-medium);
 }
 h1,
 h2,
@@ -49,10 +42,11 @@ h4,
 h5,
 h6 {
   line-height: 1.1;
+  font-family: var(--ffamily-bold);
 }
 
 .backdrop-blur {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(8, 2, 2, 0.582);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
