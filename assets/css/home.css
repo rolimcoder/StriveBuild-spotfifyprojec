@@ -17,7 +17,7 @@
 #sideMenuDesktop {
   width: 400px;
   height: calc(100vh - 90px);
-  background-color: var(--dark);
+  background-color: #000;
   position: sticky;
   left: 0;
   top: 0;
@@ -32,17 +32,18 @@
   height: 40px;
   color: #f8f8f8;
 }
-#sideMenuDesktop span {
-  line-height: 0.9;
-}
+
 #sideMenuDesktop a {
   color: var(--unactive-link-color);
   transition: var(--transition-time);
-  width: 80%;
+  width: 100%;
 }
 #sideMenuDesktop a:hover {
   text-decoration: none;
   color: var(--active-link-color);
+}
+.side-btn-wrapper {
+  width: 95%;
 }
 #sideMenuDesktop a.active {
   color: var(--active-link-color);

@@ -65,6 +65,9 @@ const mobileMenuBottomBtns = document.querySelectorAll('#mobileBottomMenu a');
 homeBtnMobile.addEventListener('click', goToHome);
 searchBtnMobile.addEventListener('click', goTosearch);
 libraryBtnMobile.addEventListener('click', goTolibrary);
+homeSideDesktop.addEventListener('click', goToHomeSide);
+searchSideDesktop.addEventListener('click', goTosearchSide);
+librarySideDesktop.addEventListener('click', goTolibrarySide);
 
 // animate active button
 const makeActive = (target) => {
@@ -82,6 +85,13 @@ const makeActive = (target) => {
       break;
   }
 };
+
+function makeActiveSideMenu(target) {
+  homeSideDesktop.classList.remove('active');
+  searchSideDesktop.classList.remove('active');
+  librarySideDesktop.classList.remove('active');
+  target.classList.add('active');
+}
 
 function goToHome(e) {
   e.preventDefault();
@@ -103,3 +113,19 @@ spotifyLogo.addEventListener('click', (e) => {
   e.preventDefault();
   showHomePage();
 });
+
+function goToHomeSide(e) {
+  e.preventDefault();
+  makeActiveSideMenu(e.currentTarget);
+  showHomePage();
+}
+function goTosearchSide(e) {
+  e.preventDefault();
+  makeActiveSideMenu(e.currentTarget);
+  showSearchPage();
+}
+function goTolibrarySide(e) {
+  e.preventDefault();
+  makeActiveSideMenu(e.currentTarget);
+  // showLibrary()
+}

@@ -145,7 +145,7 @@
         <!----------------------  Sidemenu  ----------------------->
         <aside class="d-none d-md-block py-4" id="sideMenuDesktop">
           <div class="side-menu-header border-bottom border-secondary">
-            <div class="home-page-logo px-3 mb-3">
+            <div class="home-page-logo pl-3 mb-3">
               <a href="#" id="spotifyLogo"
                 ><svg viewBox="0 0 1134 340" class="spotify-logo--text">
                   <title>Spotify</title>
@@ -156,8 +156,10 @@
               ></a>
             </div>
             <div class="home-search-library-desktop d-flex flex-column">
-              <div class="home-side-desktop-wrapper d-flex align-items-center">
-                <a href="#" id="homeSideDesktop" class="active px-3 py-1">
+              <div
+                class="home-side-desktop-wrapper d-flex align-items-center side-btn-wrapper pl-2"
+              >
+                <a href="#" id="homeSideDesktop" class="active px-3 py-2 d-flex align-items-center">
                   <svg
                     viewBox="0 0 512 512"
                     width="24"
@@ -169,13 +171,13 @@
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span>Home</span>
+                  <span class="ml-3"></span>Home</span>
                 </a>
               </div>
               <div
-                class="search-side-desktop-wrapper d-flex align-items-center"
+                class="search-side-desktop-wrapper d-flex align-items-center side-btn-wrapper pl-2"
               >
-                <a href="#" id="searchSideDesktop" class="px-3 py-1">
+                <a href="#" id="searchSideDesktop" class="px-3 py-2 d-flex align-items-center">
                   <svg
                     viewBox="0 0 512 512"
                     width="24"
@@ -187,13 +189,13 @@
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span>Search</span>
+                  <span class="ml-3">Search</span>
                 </a>
               </div>
               <div
-                class="library-side-desktop-wrapper d-flex align-items-center"
+                class="library-side-desktop-wrapper d-flex align-items-center side-btn-wrapper pl-2"
               >
-                <a href="#" id="librarySideDesktop" class="px-3 py-1">
+                <a href="#" id="librarySideDesktop" class="px-3 py-2 d-flex align-items-center">
                   <svg
                     viewBox="0 0 512 512"
                     width="24"
@@ -205,7 +207,7 @@
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span>Your Library</span>
+                  <span class="ml-3">Your Library</span>
                 </a>
               </div>
             </div>

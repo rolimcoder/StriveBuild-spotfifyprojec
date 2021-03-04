@@ -12,3 +12,6 @@ const home = document.getElementById('home');
 const loginBtn = document.getElementById('loginBtn');
 const sideMenuDesktop = document.getElementById('sideMenuDesktop');
 const spotifyLogo = document.getElementById('spotifyLogo');
+const homeSideDesktop = document.getElementById('homeSideDesktop');
+const searchSideDesktop = document.getElementById('searchSideDesktop');
+const librarySideDesktop = document.getElementById('librarySideDesktop');
