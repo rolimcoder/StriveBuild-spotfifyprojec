@@ -23,10 +23,10 @@
   top: 0;
   bottom: 0;
 }
+/* side header----------- */
 .side-menu-header {
   height: 30%;
   width: 100%;
-  /* background-color: rgba(0, 139, 139, 0.568); */
 }
 .spotify-logo--text {
   height: 40px;
@@ -50,16 +50,17 @@
   background-color: #282828;
   border-radius: 8px;
 }
+/* side header --- create playlist */
+.home-create-playlists--heading {
+  color: #b3b3b3;
+  font-size: 12px;
+}
 
+/* side main --------------- */
 .side-menu-main {
   height: 65%;
   width: 100%;
   background-color: rgba(139, 0, 0, 0.301);
-}
-.side-menu-footer {
-  height: 5%;
-  width: 100%;
-  background-color: rgba(139, 125, 0, 0.349);
 }
 
 .side-menu-main.user-playlists::-webkit-scrollbar {
@@ -70,6 +71,13 @@
   background-color: rgba(169, 169, 169, 0.486);
   border-radius: 8px;
   width: 20px;
+}
+
+/* side footer */
+.side-menu-footer {
+  height: 5%;
+  width: 100%;
+  background-color: rgba(139, 125, 0, 0.349);
 }
 
 /* side menu media */
@@ -125,14 +133,15 @@
 
 /* ============================= HOME MAIN SECTION ================================= */
 .home-main-section {
-  background: rgb(40, 137, 143);
+  background-color: #131313;
+  /* background: rgb(40, 137, 143);
   background: linear-gradient(
     175deg,
     rgba(40, 137, 143, 1) 8%,
     rgba(47, 58, 106, 0.9911151960784313) 42%,
     rgba(6, 18, 22, 1) 67%,
     rgba(0, 0, 0, 1) 100%
-  );
+  ); */
 }
 
 #homeMainNav .nav-link {
