@@ -97,9 +97,14 @@
 /* side main --------------- */
 
 .side-menu-main {
-  height: 45vh;
+  height: 50vh;
   line-height: 2;
   /* width: 100%; */
+}
+@media (min-width: 769px) {
+  .side-menu-main {
+    height: 45vh;
+  }
 }
 
 .side-menu-main ul li {
@@ -125,11 +130,9 @@
 }
 
 /* side footer */
-/* .side-menu-footer {
-  height: 5%;
-  width: 100%;
-  background-color: rgba(139, 125, 0, 0.349);
-} */
+.side-menu-footer {
+  /* height: 2vh; */
+}
 .install-svg {
   fill: var(--unactive-link-color);
   transition: var(--transition-time);
