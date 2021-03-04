@@ -130,7 +130,14 @@
   width: 100%;
   background-color: rgba(139, 125, 0, 0.349);
 } */
+.install-svg {
+  fill: var(--unactive-link-color);
+  transition: var(--transition-time);
+}
 
+.side-menu-footer:hover .install-svg {
+  fill: var(--active-link-color);
+}
 /* side menu media */
 @media (min-width: 769px) {
 }

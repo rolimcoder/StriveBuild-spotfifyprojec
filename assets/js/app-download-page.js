@@ -1,0 +1,6 @@
+function showAppDownLoadPage() {
+  jsEntryPoint.innerHTML = `
+  
+    
+  `;
+}

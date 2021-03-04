@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="assets/css/playerMusic.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
     <link rel="stylesheet" href="assets/css/search.css" />
+    <link rel="stylesheet" href="assets/css/install-mobile-app.css" />
 
     <title>Spotify Clone!</title>
   </head>
@@ -285,7 +286,30 @@
           <div
             class="side-menu-main user-playlists overflow-auto pt-2 px-4"
           ></div>
-          <div class="side-menu-footer"></div>
+          <div class="side-menu-footer">
+            <div
+              class="home-side-desktop-wrapper d-flex align-items-center side-btn-wrapper pl-2"
+            >
+              <a
+                href="#"
+                id="installAppBtn"
+                class="px-3 py-2 d-flex align-items-center"
+              >
+                <svg
+                  role="img"
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  class="install-svg"
+                >
+                  <path
+                    d="M11.5 0C5.149 0 0 5.148 0 11.5 0 17.851 5.149 23 11.5 23S23 17.851 23 11.5C23 5.148 17.851 0 11.5 0zm0 22C5.71 22 1 17.29 1 11.5S5.71 1 11.5 1 22 5.71 22 11.5 17.29 22 11.5 22zm.499-6.842V5h-1v10.149l-3.418-3.975-.758.652 4.678 5.44 4.694-5.439-.757-.653-3.439 3.984z"
+                  ></path>
+                </svg>
+                <span class="ml-1 side-btn-text">Install our app</span>
+              </a>
+            </div>
+          </div>
         </aside>
         <!------------------------Sidemenu end --------------------->
 
@@ -612,6 +636,7 @@
     <script src="assets/js/02home-page.js"></script>
     <script src="assets/js/03search.js"></script>
     <script src="assets/js/users-playlists.js"></script>
+    <script src="assets/js/app-download-page.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
