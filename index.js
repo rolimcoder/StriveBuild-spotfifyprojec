@@ -11,8 +11,8 @@ window.onload = () => {
   login.classList.add('d-none');
   home.classList.remove('d-none');
   showHomePage();
-  openSideMenuBtn.click();
-  fillUsersPlayList(musicStore);
+  // openSideMenuBtn.click();
+  fillUsersPlayList(musicStore, [userPlaylists, sideMenuMobile]);
 };
 
 // change navbar color on scroll
@@ -44,9 +44,7 @@ function changeNavBg() {
 openSideMenuBtn.addEventListener('click', hideHome);
 function hideHome(e) {
   e.preventDefault();
-  /* homeWrapper.classList.add('main-translated-out');
-  musicPlayer.classList.add('main-translated-out');
-  mobileBottomMenu.classList.add('main-translated-out'); */
+
   homeWrapper.style.transform = 'translateX(100%)';
   musicPlayer.style.transform = 'translateX(100%)';
   mobileBottomMenu.style.transform = 'translateX(100%)';
@@ -54,9 +52,12 @@ function hideHome(e) {
   navBar.classList.remove('animate__bounceInDown');
   musicPlayer.classList.remove('animate__bounceInDown');
   mobileBottomMenu.classList.remove('animate__bounceInDown');
+  sideMenuMobileBtn.classList.add('animate__bounceInDown');
 }
 // close side menu btn
-sideMenuMobileBtn.addEventListener('click', () => {
+sideMenuMobileBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  sideMenuMobileBtn.classList.remove('animate__bounceInDown');
   console.log('fire');
   homeWrapper.style.transform = 'translateX(0)';
   musicPlayer.style.transform = 'translateX(0)';

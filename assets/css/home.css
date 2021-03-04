@@ -130,9 +130,7 @@
 }
 
 /* side footer */
-.side-menu-footer {
-  /* height: 2vh; */
-}
+
 .install-svg {
   fill: var(--unactive-link-color);
   transition: var(--transition-time);
@@ -354,25 +352,9 @@
 
 /* ============================= FOOTER END 🦶🏻================================== */
 
-/* ============================= SIDE MENU MOBILE 🥗📲================================= */
-
-#sideMenuMobile {
-  height: 100vh;
-  background: purple;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  transform: translateX(-100%);
-  transition: var(--transition-time) ease;
-  /* z-index: 3000; */
-}
-
 /* ============================= SIDE MENU MOBILE END ================================ */
 
 /* animation playground 😄 🎮 */
-.main-translated-out {
-  transform: translateX(100%);
-}
 
 /* .side-mobile-menu-translated-in {
   transform: translateX(0);
