@@ -23,6 +23,12 @@
   top: 0;
   bottom: 0;
 }
+
+@media (max-width: 768px) {
+  #sideMenuDesktop {
+    width: 250px;
+  }
+}
 /* side header----------- */
 .side-menu-header {
   /* height: 30%; */
