@@ -51,17 +51,29 @@
   border-radius: 8px;
 }
 /* side header --- create playlist */
-.home-create-playlists--heading {
+.home-create-playlists-fav-songs--heading {
   color: #b3b3b3;
   font-size: 12px;
 }
 
+.create-play-svg {
+  background: #f8f8f871;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  fill: #000;
+  transition: var(--transition-time);
+}
+#createPlaylistBtn:hover .create-play-svg {
+  background: #f8f8f8;
+}
+
 /* side main --------------- */
-.side-menu-main {
+/* .side-menu-main {
   height: 65%;
   width: 100%;
   background-color: rgba(139, 0, 0, 0.301);
-}
+} */
 
 .side-menu-main.user-playlists::-webkit-scrollbar {
   width: 0.5em;
@@ -74,11 +86,11 @@
 }
 
 /* side footer */
-.side-menu-footer {
+/* .side-menu-footer {
   height: 5%;
   width: 100%;
   background-color: rgba(139, 125, 0, 0.349);
-}
+} */
 
 /* side menu media */
 @media (min-width: 769px) {
@@ -110,11 +122,11 @@
   background-color: #000;
 }
 #userImg {
-  height: 55px;
-  width: 55px;
+  height: 45px;
+  width: 45px;
 }
 #userName {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 /* media per custom dropdown */
 @media (max-width: 992px) {
