@@ -1,3 +1,4 @@
+const userName = document.getElementById('userName');
 const openSideMenuBtn = document.getElementById('openSideMenuBtn');
 const homeWrapper = document.querySelector('.home-wrapper');
 const musicPlayer = document.getElementById('musicPlayer');
