@@ -24,3 +24,21 @@
   font-size: 1.5rem;
   color: #05fa5b;
 }
+
+#sideMenuMobile ul {
+  height: 67vh;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+#sideMenuMobile::after {
+  content: 'Made with love by Hafiz, David & Ardi';
+  position: absolute;
+  bottom: 1%;
+  left: 11%;
+  color: #05fa5b;
+  z-index: 200;
+  width: 100%;
+  font-size: 0.8rem;
+}

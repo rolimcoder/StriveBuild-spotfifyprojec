@@ -29,6 +29,11 @@
     width: 250px;
   }
 }
+@media (min-width: 992px) {
+  #sideMenuDesktop {
+    width: 300px;
+  }
+}
 /* side header----------- */
 .side-menu-header {
   /* height: 30%; */
@@ -151,16 +156,6 @@
 
 .side-menu-footer:hover .install-svg {
   fill: var(--active-link-color);
-}
-/* side menu media */
-@media (min-width: 769px) {
-}
-@media (min-width: 992px) {
-  #sideMenuDesktop {
-    width: 300px;
-  }
-}
-@media (min-width: 1200px) {
 }
 
 /* main section ------------------- */

@@ -5,7 +5,7 @@ function fillUsersPlayList(array, menus) {
     ul.innerHTML = array
       .map(
         (album) => `
-      <li class="text-truncate">
+      <li class="text-truncate animate__animated animate__faster">
         <a href="#" class="playlist-title">${album.title}</a>
       </li>
   `

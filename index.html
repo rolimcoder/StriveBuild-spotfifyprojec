@@ -249,7 +249,6 @@
               >
                 <a
                   href="#"
-                  id="createPlaylistBtn"
                   class="py-2 d-flex align-items-center create-playlist-btn"
                 >
                   <svg
@@ -268,7 +267,6 @@
               >
                 <a
                   href="#"
-                  id="addFavSongBtn"
                   class="py-2 d-flex align-items-center add-fav-song-btn"
                 >
                   <div class="add-fav-song-svg-wrapper">
@@ -404,7 +402,7 @@
       <!--Here Start Footer now-playing-bar----------------->
       <div
         id="musicPlayer"
-        class="now-playing-bar px-0 container-fluid fixed-bottom animate__animated animate__bounceInDown animate__faster"
+        class="now-playing-bar px-0 container-fluid fixed-bottom animate__animated animate__bounceInUp animate__faster"
       >
         <!--Progress bar in top for sm-->
         <div class="container-fluid px-0 d-sm-none">
@@ -581,7 +579,7 @@
       <!-- MOBILE BOTTOM MENU -->
       <div
         id="mobileBottomMenu"
-        class="d-md-none animate__animated animate__bounceInDown animate__faster"
+        class="d-md-none animate__animated animate__bounceInUp animate__faster"
       >
         <div
           class="mobile-bottom-menu-wrapper d-flex justify-content-center align-items-center py-2 h-100"
@@ -627,13 +625,56 @@
           </a>
         </div>
       </div>
-      <div
-        id="sideMenuMobile"
-        class="container-fluid py-4 px-5 side-menu-main overflow-auto"
-      >
+      <div id="sideMenuMobile" class="container-fluid py-4 px-5 side-menu-main">
         <a href="#" class="d-inline-block animate__animated animate__faster"
           ><i class="fas fa-times-circle fa-3x"></i
         ></a>
+        <!-- create playlist and addfav song -->
+        <div class="home-create-playlists-fav-songsmy-2 d-flex flex-column">
+          <h6 class="text-uppercase home-create-playlists-fav-songs--heading">
+            playlist
+          </h6>
+          <!-- create playlist BTN -->
+          <div
+            class="home-create-playlists--create-playlist-btn d-flex align-items-center side-btn-wrapper"
+          >
+            <a
+              href="#"
+              class="py-2 d-flex align-items-center create-playlist-btn"
+            >
+              <svg
+                class="create-play-svg"
+                shape-rendering="crispEdges"
+                viewBox="0 0 36 36"
+              >
+                <path d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path>
+              </svg>
+              <span class="ml-2 side-btn-text">Create Playlist</span>
+            </a>
+          </div>
+          <!-- add favourite song BTN -->
+          <div
+            class="home-create-playlists--favourite-songs-btn d-flex align-items-center side-btn-wrapper border-bottom border-secondary"
+          >
+            <a href="#" class="py-2 d-flex align-items-center add-fav-song-btn">
+              <div class="add-fav-song-svg-wrapper">
+                <svg
+                  role="img"
+                  height="16"
+                  width="16"
+                  viewBox="0 0 16 16"
+                  class="Svg-ulyrgf-0 hJgLcF"
+                >
+                  <path fill="none" d="M0 0h16v16H0z"></path>
+                  <path
+                    d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z"
+                  ></path>
+                </svg>
+              </div>
+              <span class="ml-2 side-btn-text">Favourite songs</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -652,14 +693,12 @@
     ></script>
     <script src="assets/js/00general-variables.js"></script>
     <script src="assets/js/01dom-references.js"></script>
+    <script src="assets/js/login.js"></script>
     <script src="assets/js/02home-page.js"></script>
     <script src="assets/js/03search.js"></script>
-
     <script src="assets/js/users-playlists.js"></script>
     <script src="assets/js/app-download-page.js"></script>
-
     <script src="assets/js/album.js"></script>
-
     <script src="index.js"></script>
   </body>
 </html>

@@ -11,7 +11,7 @@ window.onload = () => {
   login.classList.add('d-none');
   home.classList.remove('d-none');
   showHomePage();
-  // openSideMenuBtn.click();
+  openSideMenuBtn.click();
   fillUsersPlayList(musicStore, [userPlaylists, sideMenuMobile]);
 };
 
@@ -50,9 +50,16 @@ function hideHome(e) {
   mobileBottomMenu.style.transform = 'translateX(100%)';
   sideMenuMobile.style.transform = 'translateX(0)';
   navBar.classList.remove('animate__bounceInDown');
-  musicPlayer.classList.remove('animate__bounceInDown');
-  mobileBottomMenu.classList.remove('animate__bounceInDown');
+  musicPlayer.classList.remove('animate__bounceInUp');
+  mobileBottomMenu.classList.remove('animate__bounceInUp');
   sideMenuMobileBtn.classList.add('animate__bounceInDown');
+  const sideUlLis = sideMenuMobile.querySelectorAll('li');
+  console.log(sideUlLis);
+  sideUlLis.forEach((li, idx) => {
+    setTimeout(() => {
+      li.classList.add('animate__fadeInLeft');
+    }, 50 + (idx + 5) * 20);
+  });
 }
 // close side menu btn
 sideMenuMobileBtn.addEventListener('click', (e) => {
@@ -64,8 +71,11 @@ sideMenuMobileBtn.addEventListener('click', (e) => {
   mobileBottomMenu.style.transform = 'translateX(0)';
   sideMenuMobile.style.transform = 'translateX(-100%)';
   navBar.classList.add('animate__bounceInDown');
-  musicPlayer.classList.add('animate__bounceInDown');
-  mobileBottomMenu.classList.add('animate__bounceInDown');
+  musicPlayer.classList.add('animate__bounceInUp');
+  mobileBottomMenu.classList.add('animate__bounceInUp');
+  const sideUlLis = sideMenuMobile.querySelectorAll('li');
+  console.log(sideUlLis);
+  sideUlLis.forEach((li) => li.classList.remove('animate__fadeInLeft'));
 });
 
 ///::::::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
