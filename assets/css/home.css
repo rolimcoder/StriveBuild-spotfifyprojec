@@ -64,8 +64,34 @@
   fill: #000;
   transition: var(--transition-time);
 }
-#createPlaylistBtn:hover .create-play-svg {
+.create-playlist-btn:hover .create-play-svg {
   background: #f8f8f8;
+}
+
+.add-fav-song-svg-wrapper {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  display: flex;
+
+  /* -webkit-box-align: center; */
+  /* -ms-flex-align: center; */
+  align-items: center;
+  /* -webkit-box-pack: center; */
+  /* -ms-flex-pack: center; */
+  justify-content: center;
+}
+.add-fav-song-svg-wrapper > svg > path + path {
+  fill: var(--unactive-link-color);
+  transition: var(--transition-time);
+}
+.add-fav-song-btn:hover .add-fav-song-svg-wrapper > svg > path + path {
+  fill: var(--active-link-color);
+}
+
+.side-btn-text {
+  font-size: 0.8rem;
 }
 
 /* side main --------------- */
@@ -194,6 +220,7 @@
   width: 18vmin;
   background-color: rgb(24, 24, 24);
   transition: var(--transition-time);
+  cursor: pointer;
 }
 .card-custom:hover {
   background: #282828;

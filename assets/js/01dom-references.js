@@ -16,3 +16,4 @@ const homeSideDesktop = document.getElementById('homeSideDesktop');
 const searchSideDesktop = document.getElementById('searchSideDesktop');
 const librarySideDesktop = document.getElementById('librarySideDesktop');
 const createPlaylistBtn = document.getElementById('createPlaylistBtn');
+const addFavSongBtn = document.getElementById('addFavSongBtn');
