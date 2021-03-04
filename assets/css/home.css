@@ -97,13 +97,14 @@
 /* side main --------------- */
 
 .side-menu-main {
-  height: 50vh;
+  height: 60vh;
   line-height: 2;
   /* width: 100%; */
 }
-@media (min-width: 769px) {
+
+@media (max-height: 1080px) {
   .side-menu-main {
-    height: 45vh;
+    height: 47vh;
   }
 }
 
@@ -131,6 +132,12 @@
 
 /* side footer */
 
+.side-menu-footer {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  right: 0;
+}
 .install-svg {
   fill: var(--unactive-link-color);
   transition: var(--transition-time);
@@ -169,8 +176,8 @@
   background-color: #000;
 }
 #userImg {
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
 }
 #userName {
   font-size: 1rem;
@@ -193,14 +200,6 @@
 /* ============================= HOME MAIN SECTION ================================= */
 .home-main-section {
   background-color: #131313;
-  /* background: rgb(40, 137, 143);
-  background: linear-gradient(
-    175deg,
-    rgba(40, 137, 143, 1) 8%,
-    rgba(47, 58, 106, 0.9911151960784313) 42%,
-    rgba(6, 18, 22, 1) 67%,
-    rgba(0, 0, 0, 1) 100%
-  ); */
 }
 
 #homeMainNav .nav-link {
@@ -216,6 +215,10 @@
   margin-right: -20px;
   z-index: 30;
 }
+#prevBtn,
+#nextBtn {
+  font-size: 1.5rem;
+}
 
 #prevBtn.nav-link,
 #nextBtn.nav-link,
@@ -225,13 +228,13 @@
 #prevBtn.nav-link:hover,
 #nextBtn.nav-link:hover,
 #openSideMenuBtn.nav-link:hover {
-  transform: scale(1.1);
+  transform: translateY(-1px);
 }
 
 #prevBtn.nav-link:active,
 #nextBtn.nav-link:active,
 #openSideMenuBtn.nav-link:active {
-  transform: scale(1);
+  transform: scale(0.9);
 }
 
 /* rowsssss & caaaards */
