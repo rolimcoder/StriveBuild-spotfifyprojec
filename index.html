@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="assets/css/playerMusic.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
     <link rel="stylesheet" href="assets/css/search.css" />
+    <link rel="stylesheet" href="assets/css/install-mobile-app.css" />
 
     <title>Spotify Clone!</title>
   </head>
@@ -144,7 +145,9 @@
       <div class="home-wrapper d-flex w-100">
         <!----------------------  Sidemenu  ----------------------->
         <aside class="d-none d-md-block py-4" id="sideMenuDesktop">
-          <div class="side-menu-header border-bottom border-secondary">
+          <!-- header -->
+          <div class="side-menu-header">
+            <!-- logo -->
             <div class="home-page-logo pl-3 mb-3">
               <a href="#" id="spotifyLogo"
                 ><svg viewBox="0 0 1134 340" class="spotify-logo--text">
@@ -155,11 +158,16 @@
                   ></path></svg
               ></a>
             </div>
+            <!-- home search library -->
             <div class="home-search-library-desktop d-flex flex-column">
               <div
                 class="home-side-desktop-wrapper d-flex align-items-center side-btn-wrapper pl-2"
               >
-                <a href="#" id="homeSideDesktop" class="active px-3 py-2 d-flex align-items-center">
+                <a
+                  href="#"
+                  id="homeSideDesktop"
+                  class="active px-3 py-2 d-flex align-items-center"
+                >
                   <svg
                     viewBox="0 0 512 512"
                     width="24"
@@ -171,13 +179,17 @@
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span class="ml-3"></span>Home</span>
+                  <span class="ml-3 side-btn-text">Home</span>
                 </a>
               </div>
               <div
                 class="search-side-desktop-wrapper d-flex align-items-center side-btn-wrapper pl-2"
               >
-                <a href="#" id="searchSideDesktop" class="px-3 py-2 d-flex align-items-center">
+                <a
+                  href="#"
+                  id="searchSideDesktop"
+                  class="px-3 py-2 d-flex align-items-center"
+                >
                   <svg
                     viewBox="0 0 512 512"
                     width="24"
@@ -189,13 +201,17 @@
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span class="ml-3">Search</span>
+                  <span class="ml-3 side-btn-text">Search</span>
                 </a>
               </div>
               <div
                 class="library-side-desktop-wrapper d-flex align-items-center side-btn-wrapper pl-2"
               >
-                <a href="#" id="librarySideDesktop" class="px-3 py-2 d-flex align-items-center">
+                <a
+                  href="#"
+                  id="librarySideDesktop"
+                  class="px-3 py-2 d-flex align-items-center"
+                >
                   <svg
                     viewBox="0 0 512 512"
                     width="24"
@@ -207,138 +223,93 @@
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span class="ml-3">Your Library</span>
+                  <span class="ml-3 side-btn-text">Your Library</span>
+                </a>
+              </div>
+            </div>
+            <!-- create playlist - favourite songs -->
+            <div
+              class="home-create-playlists-fav-songs pl-4 my-2 d-flex flex-column"
+            >
+              <h6
+                class="text-uppercase home-create-playlists-fav-songs--heading"
+              >
+                playlist
+              </h6>
+              <!-- create playlist BTN -->
+              <div
+                class="home-create-playlists--create-playlist-btn d-flex align-items-center side-btn-wrapper"
+              >
+                <a
+                  href="#"
+                  id="createPlaylistBtn"
+                  class="py-2 d-flex align-items-center create-playlist-btn"
+                >
+                  <svg
+                    class="create-play-svg"
+                    shape-rendering="crispEdges"
+                    viewBox="0 0 36 36"
+                  >
+                    <path d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path>
+                  </svg>
+                  <span class="ml-2 side-btn-text">Create Playlist</span>
+                </a>
+              </div>
+              <!-- add favourite song BTN -->
+              <div
+                class="home-create-playlists--favourite-songs-btn d-flex align-items-center side-btn-wrapper border-bottom border-secondary"
+              >
+                <a
+                  href="#"
+                  id="addFavSongBtn"
+                  class="py-2 d-flex align-items-center add-fav-song-btn"
+                >
+                  <div class="add-fav-song-svg-wrapper">
+                    <svg
+                      role="img"
+                      height="16"
+                      width="16"
+                      viewBox="0 0 16 16"
+                      class="Svg-ulyrgf-0 hJgLcF"
+                    >
+                      <path fill="none" d="M0 0h16v16H0z"></path>
+                      <path
+                        d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="ml-2 side-btn-text">Favourite songs</span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="side-menu-main user-playlists overflow-auto pt-2">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio, fugiat doloribus reiciendis quam porro explicabo
-              placeat tempora eveniet quibusdam corrupti praesentium, voluptate
-              vel earum repudiandae eum molestiae minima! Necessitatibus fugit
-              explicabo illo quisquam, accusamus dolorem qui cumque aut ipsa
-              fugiat nam aspernatur, reprehenderit tempore porro voluptatum,
-              quos dignissimos doloremque omnis asperiores earum. Libero facilis
-              in dolor, iusto, alias sapiente tempore laboriosam aut ab corporis
-              a sint! Distinctio fuga fugiat, ut incidunt at aliquid sint magnam
-              rerum reiciendis debitis, illo quod accusamus sunt minus, repellat
-              eos. Quaerat est error voluptatem provident perspiciatis nam
-              repudiandae ad sequi voluptate sed! Voluptas, nulla! Unde nihil
-              exercitationem placeat blanditiis aspernatur ipsa eius facere,
-              dolor natus tenetur, veniam sapiente iste repudiandae, expedita
-              laudantium id odio impedit molestiae labore ut assumenda! Tenetur
-              quasi aliquid exercitationem ipsa natus perferendis dolorem rerum
-              accusamus molestias animi, doloremque quisquam eligendi ea tempora
-              inventore id voluptates quam sint possimus quis consectetur quae
-              quos delectus. Dolores incidunt nostrum rerum, praesentium
-              perferendis, quae, reiciendis sit amet laborum voluptates nemo
-              molestiae perspiciatis in natus aliquid. Consequatur illo unde
-              quod veritatis fuga at molestiae natus illum voluptates eum atque,
-              sunt quaerat exercitationem, quisquam tempora soluta eius,
-              incidunt omnis obcaecati aut. Voluptate, expedita? Veritatis odit
-              aspernatur saepe sed velit. Numquam dolorem esse ipsum id ad,
-              dolores mollitia animi, odit voluptates praesentium delectus
-              voluptate ratione sunt pariatur facilis rem a tempore, dignissimos
-              autem enim. Sequi laudantium nihil praesentium temporibus
-              blanditiis saepe veniam id delectus cupiditate quae facere ipsum,
-              modi quisquam voluptates illo iusto voluptate eius. Saepe veniam,
-              expedita dolorem voluptates nesciunt a accusamus autem facilis
-              eaque magnam, minus quis vel at, quos molestiae assumenda fugit
-              eius consectetur quo. Expedita, quibusdam nihil! Error vel
-              molestias odio ut dolore ducimus obcaecati ipsum, amet et! Vero
-              officiis facilis nulla quo ipsa distinctio delectus tenetur magnam
-              aliquid labore quaerat cum perferendis cumque neque aut, quam
-              iste. Tempora quaerat excepturi saepe qui, similique culpa tempore
-              maxime obcaecati numquam mollitia sequi animi eaque, nemo ab in
-              explicabo voluptatibus molestiae aliquid. Inventore dolor porro
-              atque odio voluptatibus, consequuntur aut, recusandae cupiditate,
-              soluta iste officiis quos consectetur! Consequatur eum dolore
-              culpa iste aliquid ullam dolorem, quo id accusantium enim, ratione
-              inventore quia. Vitae nobis saepe, numquam quia ullam
-              exercitationem eligendi tenetur, laudantium porro assumenda,
-              laborum optio? Voluptas qui magnam obcaecati. Neque sunt omnis
-              quibusdam, quia tempora distinctio? Et non, explicabo rerum
-              asperiores corporis vitae nostrum nisi tempora quae maiores veniam
-              porro nulla deleniti doloremque quas laboriosam ex, dicta
-              necessitatibus ab laudantium, eos fugit at. Exercitationem
-              eligendi voluptate, itaque qui dolores ipsam sunt vel, fugiat
-              perspiciatis, possimus reprehenderit voluptas iusto alias!
-              Exercitationem aliquid nisi repudiandae ratione, dolorum sit quam,
-              eveniet nemo eius, molestiae consequatur deserunt at qui harum
-              ipsa inventore quod culpa nihil tempora! Quisquam iste voluptate
-              velit voluptas ab! Excepturi ipsa iure optio ipsum beatae qui
-              omnis sint voluptate aliquid dolores. Sed deserunt aperiam cum
-              itaque doloremque, vitae quibusdam veniam, repellendus odio
-              voluptas eos consequatur asperiores, libero magni maiores repellat
-              quasi et non voluptatum reprehenderit labore. Excepturi omnis
-              eveniet possimus dolore doloremque atque consectetur nemo, non a
-              quia minus explicabo ducimus ad sapiente tempora quo sunt
-              voluptatum veniam quis? Ea quam ducimus vero accusamus, laudantium
-              facilis explicabo inventore, expedita atque obcaecati, quis qui
-              sunt quas dicta corrupti asperiores illo reiciendis ad provident
-              maiores voluptate ut voluptates ipsum soluta. Nihil voluptatum
-              incidunt quod, beatae amet ut expedita inventore nisi qui, fugiat
-              odio debitis dolore et blanditiis sapiente soluta atque adipisci
-              itaque doloribus quibusdam alias consectetur impedit pariatur id?
-              Soluta est mollitia qui. Accusantium nam maiores voluptates
-              excepturi voluptatum ipsa quidem! Maiores magni, consectetur
-              nesciunt voluptatibus recusandae sapiente eligendi aliquam, ut
-              reiciendis assumenda officia dicta dignissimos nostrum non
-              voluptate veniam iste? Est dolores illo optio eum consequatur odit
-              accusamus voluptate corporis rerum deserunt, quibusdam nobis?
-              Deleniti, voluptatibus nisi! Numquam cumque nihil vel,
-              voluptatibus commodi labore sint libero ipsam fugit odio magnam
-              reiciendis dolores? Delectus eius inventore eligendi nisi, tenetur
-              nulla dolor perspiciatis! Temporibus modi dicta recusandae aperiam
-              suscipit, voluptatem dolorem. Voluptatum officiis temporibus
-              provident, doloremque eos ad repudiandae praesentium deserunt?
-              Repudiandae aut, soluta aperiam deserunt dolore accusantium, animi
-              consectetur sint error voluptas iusto velit, vero amet mollitia
-              corrupti corporis pariatur. Vero, quae! Fuga dolorum, non expedita
-              placeat, ratione libero ipsam quasi illo culpa cupiditate, est
-              voluptate velit vitae numquam id quo sit facilis. Accusantium,
-              voluptas voluptatum nam aspernatur explicabo perspiciatis
-              provident odit laudantium, vero neque, autem quidem tenetur
-              inventore saepe iusto earum accusamus doloremque natus sit itaque
-              odio magni blanditiis. A veniam expedita laborum magni placeat
-              deleniti quam! Quod vitae, iusto fuga ducimus aliquid aspernatur,
-              suscipit a soluta adipisci consequatur, vel quos recusandae
-              deleniti. Excepturi fugiat similique, rerum quasi nisi ullam culpa
-              quis sequi doloribus nesciunt, quaerat minus deserunt recusandae
-              molestias assumenda ipsam soluta nam reprehenderit vitae ipsa
-              neque? Excepturi nam at iure enim eius sint odit quia,
-              reprehenderit dolores vel expedita, similique commodi quas
-              doloribus ut laboriosam culpa quis cum amet. Libero ratione odio
-              doloremque necessitatibus, explicabo quis provident inventore
-              rerum nam maxime voluptate obcaecati eligendi consequatur!
-              Deserunt quia quaerat enim quis quo eligendi, nesciunt aspernatur
-              aliquam fuga ad, fugiat aut quod? Nam mollitia, doloribus ipsam
-              earum veritatis reprehenderit praesentium dolore hic eius
-              temporibus, aliquam animi quisquam molestiae voluptatem
-              perferendis magni expedita unde exercitationem? Ipsam, veniam
-              accusantium vitae illum ea, earum beatae iste unde commodi,
-              necessitatibus sapiente? Eaque, quibusdam. Necessitatibus
-              molestias corporis non corrupti voluptatem aliquam, amet libero
-              esse dicta possimus nisi nihil, modi voluptatibus? Doloribus
-              recusandae debitis possimus assumenda, molestiae, voluptatem
-              voluptas vitae eveniet, perspiciatis tempora fuga expedita nisi
-              odio tenetur reiciendis sunt veritatis autem vero provident.
-              Natus, laudantium nobis, quod incidunt possimus quos tempora
-              reiciendis sed minus molestiae molestias repudiandae! Dicta,
-              numquam magnam saepe quis nihil quae debitis molestiae, iusto
-              velit similique, dolore esse voluptatum? Ipsam ipsa blanditiis
-              beatae quaerat facilis libero voluptas dignissimos dolorum illo
-              pariatur. Assumenda officiis illo ipsa odio illum pariatur,
-              voluptatum dolor doloremque quasi odit impedit laudantium rerum
-              sed. Placeat cumque aliquam labore minima quaerat fugiat harum
-              nihil, modi iure, possimus distinctio doloribus obcaecati, quam
-              esse aliquid ut. Deleniti labore libero voluptatem totam possimus
-              rerum, tenetur optio repudiandae illo sit consequuntur.
-            </p>
+          <div
+            class="side-menu-main user-playlists overflow-auto pt-2 px-4"
+          ></div>
+          <div class="side-menu-footer">
+            <div
+              class="home-side-desktop-wrapper d-flex align-items-center side-btn-wrapper pl-2"
+            >
+              <a
+                href="#"
+                id="installAppBtn"
+                class="px-3 py-2 d-flex align-items-center"
+              >
+                <svg
+                  role="img"
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  class="install-svg"
+                >
+                  <path
+                    d="M11.5 0C5.149 0 0 5.148 0 11.5 0 17.851 5.149 23 11.5 23S23 17.851 23 11.5C23 5.148 17.851 0 11.5 0zm0 22C5.71 22 1 17.29 1 11.5S5.71 1 11.5 1 22 5.71 22 11.5 17.29 22 11.5 22zm.499-6.842V5h-1v10.149l-3.418-3.975-.758.652 4.678 5.44 4.694-5.439-.757-.653-3.439 3.984z"
+                  ></path>
+                </svg>
+                <span class="ml-1 side-btn-text">Install our app</span>
+              </a>
+            </div>
           </div>
-          <div class="side-menu-footer"></div>
         </aside>
         <!------------------------Sidemenu end --------------------->
 
@@ -664,7 +635,12 @@
     <script src="assets/js/01dom-references.js"></script>
     <script src="assets/js/02home-page.js"></script>
     <script src="assets/js/03search.js"></script>
+
+    <script src="assets/js/users-playlists.js"></script>
+    <script src="assets/js/app-download-page.js"></script>
+
     <script src="assets/js/album.js"></script>
+
     <script src="index.js"></script>
   </body>
 </html>

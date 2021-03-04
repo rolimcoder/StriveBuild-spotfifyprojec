@@ -23,14 +23,14 @@
   top: 0;
   bottom: 0;
 }
+/* side header----------- */
 .side-menu-header {
-  height: 30%;
+  /* height: 30%; */
   width: 100%;
-  /* background-color: rgba(0, 139, 139, 0.568); */
 }
 .spotify-logo--text {
   height: 40px;
-  color: #f8f8f8;
+  color: #fff;
 }
 
 #sideMenuDesktop a {
@@ -50,16 +50,68 @@
   background-color: #282828;
   border-radius: 8px;
 }
+/* side header --- create playlist */
+.home-create-playlists-fav-songs--heading {
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.create-play-svg {
+  background: #f8f8f871;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  fill: #000;
+  transition: var(--transition-time);
+}
+.create-playlist-btn:hover .create-play-svg {
+  background: #f8f8f8;
+}
+
+.add-fav-song-svg-wrapper {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  display: flex;
+
+  /* -webkit-box-align: center; */
+  /* -ms-flex-align: center; */
+  align-items: center;
+  /* -webkit-box-pack: center; */
+  /* -ms-flex-pack: center; */
+  justify-content: center;
+}
+.add-fav-song-svg-wrapper > svg > path + path {
+  fill: var(--unactive-link-color);
+  transition: var(--transition-time);
+}
+.add-fav-song-btn:hover .add-fav-song-svg-wrapper > svg > path + path {
+  fill: var(--active-link-color);
+}
+
+.side-btn-text {
+  font-size: 0.8rem;
+}
+
+/* side main --------------- */
 
 .side-menu-main {
-  height: 65%;
-  width: 100%;
-  background-color: rgba(139, 0, 0, 0.301);
+  height: 45vh;
+  line-height: 2;
+  /* width: 100%; */
 }
-.side-menu-footer {
-  height: 5%;
-  width: 100%;
-  background-color: rgba(139, 125, 0, 0.349);
+
+.side-menu-main ul li {
+  list-style: none;
+}
+.side-menu-main ul {
+  padding: 0;
+}
+
+.side-menu-main * {
+  color: var(--unactive-link-color);
+  font-size: 0.8rem;
 }
 
 .side-menu-main.user-playlists::-webkit-scrollbar {
@@ -72,6 +124,20 @@
   width: 20px;
 }
 
+/* side footer */
+/* .side-menu-footer {
+  height: 5%;
+  width: 100%;
+  background-color: rgba(139, 125, 0, 0.349);
+} */
+.install-svg {
+  fill: var(--unactive-link-color);
+  transition: var(--transition-time);
+}
+
+.side-menu-footer:hover .install-svg {
+  fill: var(--active-link-color);
+}
 /* side menu media */
 @media (min-width: 769px) {
 }
@@ -102,11 +168,11 @@
   background-color: #000;
 }
 #userImg {
-  height: 55px;
-  width: 55px;
+  height: 45px;
+  width: 45px;
 }
 #userName {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 /* media per custom dropdown */
 @media (max-width: 992px) {
@@ -125,14 +191,15 @@
 
 /* ============================= HOME MAIN SECTION ================================= */
 .home-main-section {
-  background: rgb(40, 137, 143);
+  background-color: #131313;
+  /* background: rgb(40, 137, 143);
   background: linear-gradient(
     175deg,
     rgba(40, 137, 143, 1) 8%,
     rgba(47, 58, 106, 0.9911151960784313) 42%,
     rgba(6, 18, 22, 1) 67%,
     rgba(0, 0, 0, 1) 100%
-  );
+  ); */
 }
 
 #homeMainNav .nav-link {
@@ -173,6 +240,7 @@
   width: 18vmin;
   background-color: rgb(24, 24, 24);
   transition: var(--transition-time);
+  cursor: pointer;
 }
 .card-custom:hover {
   background: #282828;

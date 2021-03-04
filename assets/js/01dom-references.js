@@ -15,3 +15,7 @@ const spotifyLogo = document.getElementById('spotifyLogo');
 const homeSideDesktop = document.getElementById('homeSideDesktop');
 const searchSideDesktop = document.getElementById('searchSideDesktop');
 const librarySideDesktop = document.getElementById('librarySideDesktop');
+const createPlaylistBtn = document.getElementById('createPlaylistBtn');
+const addFavSongBtn = document.getElementById('addFavSongBtn');
+const userPlaylists = document.querySelector('.side-menu-main.user-playlists');
+const installAppBtn = document.getElementById('installAppBtn');

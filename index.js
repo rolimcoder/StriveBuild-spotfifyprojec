@@ -11,6 +11,7 @@ window.onload = () => {
   login.classList.add('d-none');
   home.classList.remove('d-none');
   showHomePage();
+  fillUsersPlayList(musicStore);
 };
 
 // change navbar color on scroll
@@ -68,6 +69,7 @@ libraryBtnMobile.addEventListener('click', goTolibrary);
 homeSideDesktop.addEventListener('click', goToHomeSide);
 searchSideDesktop.addEventListener('click', goTosearchSide);
 librarySideDesktop.addEventListener('click', goTolibrarySide);
+installAppBtn.addEventListener('click', installApp);
 
 // animate active button
 const makeActive = (target) => {
@@ -90,6 +92,7 @@ function makeActiveSideMenu(target) {
   homeSideDesktop.classList.remove('active');
   searchSideDesktop.classList.remove('active');
   librarySideDesktop.classList.remove('active');
+  installAppBtn.classList.remove('active');
   target.classList.add('active');
 }
 
@@ -111,6 +114,10 @@ function goTolibrary(e) {
 // spotify logo home page
 spotifyLogo.addEventListener('click', (e) => {
   e.preventDefault();
+  homeSideDesktop.classList.add('active');
+  searchSideDesktop.classList.remove('active');
+  librarySideDesktop.classList.remove('active');
+  installAppBtn.classList.remove('active');
   showHomePage();
 });
 
@@ -128,4 +135,10 @@ function goTolibrarySide(e) {
   e.preventDefault();
   makeActiveSideMenu(e.currentTarget);
   // showLibrary()
+}
+
+function installApp(e) {
+  e.preventDefault();
+  makeActiveSideMenu(e.currentTarget);
+  showAppDownLoadPage();
 }
