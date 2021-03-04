@@ -11,6 +11,7 @@ window.onload = () => {
   login.classList.add('d-none');
   home.classList.remove('d-none');
   showHomePage();
+  openSideMenuBtn.click();
   fillUsersPlayList(musicStore);
 };
 
@@ -40,18 +41,30 @@ function changeNavBg() {
 }
 
 // open side-mobile menu
-openSideMenuBtn.addEventListener('click', (e) => {
+openSideMenuBtn.addEventListener('click', hideHome);
+function hideHome(e) {
   e.preventDefault();
-  homeWrapper.classList.toggle('main-translated-out');
-  musicPlayer.classList.toggle('main-translated-out');
-  mobileBottomMenu.classList.toggle('main-translated-out');
-  console.log(sideMenuMobile);
-  sideMenuMobile.classList.toggle('side-mobile-menu-translated-in');
-  if (sideMenuMobile.classList.contains('side-mobile-menu-translated-in')) {
-    sideMenuMobile.style.transform = 'translateX(0)';
-  } else {
-    sideMenuMobile.style.transform = 'translateX(-100%)';
-  }
+  /* homeWrapper.classList.add('main-translated-out');
+  musicPlayer.classList.add('main-translated-out');
+  mobileBottomMenu.classList.add('main-translated-out'); */
+  homeWrapper.style.transform = 'translateX(100%)';
+  musicPlayer.style.transform = 'translateX(100%)';
+  mobileBottomMenu.style.transform = 'translateX(100%)';
+  sideMenuMobile.style.transform = 'translateX(0)';
+  navBar.classList.remove('animate__bounceInDown');
+  musicPlayer.classList.remove('animate__bounceInDown');
+  mobileBottomMenu.classList.remove('animate__bounceInDown');
+}
+// close side menu btn
+sideMenuMobileBtn.addEventListener('click', () => {
+  console.log('fire');
+  homeWrapper.style.transform = 'translateX(0)';
+  musicPlayer.style.transform = 'translateX(0)';
+  mobileBottomMenu.style.transform = 'translateX(0)';
+  sideMenuMobile.style.transform = 'translateX(-100%)';
+  navBar.classList.add('animate__bounceInDown');
+  musicPlayer.classList.add('animate__bounceInDown');
+  mobileBottomMenu.classList.add('animate__bounceInDown');
 });
 
 ///::::::::::::::::::::::::::::>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

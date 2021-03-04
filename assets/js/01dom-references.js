@@ -20,3 +20,4 @@ const createPlaylistBtn = document.getElementById('createPlaylistBtn');
 const addFavSongBtn = document.getElementById('addFavSongBtn');
 const userPlaylists = document.querySelector('.side-menu-main.user-playlists');
 const installAppBtn = document.getElementById('installAppBtn');
+const sideMenuMobileBtn = document.querySelector('#sideMenuMobile button');
