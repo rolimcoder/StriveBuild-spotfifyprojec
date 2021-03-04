@@ -13,11 +13,11 @@
 
 /* --------------------------------------------------------------- */
 
-/* ASIDE DESKTOP --------- */
+/* ASIDE DESKTOP ----------------------------------------------------- */
 #sideMenuDesktop {
-  width: 500px;
-  height: calc(100vh - 80px);
-  background-color: var(--dark);
+  width: 400px;
+  height: calc(100vh - 90px);
+  background-color: #000;
   position: sticky;
   left: 0;
   top: 0;
@@ -26,8 +26,31 @@
 .side-menu-header {
   height: 30%;
   width: 100%;
-  background-color: rgba(0, 139, 139, 0.568);
+  /* background-color: rgba(0, 139, 139, 0.568); */
 }
+.spotify-logo--text {
+  height: 40px;
+  color: #f8f8f8;
+}
+
+#sideMenuDesktop a {
+  color: var(--unactive-link-color);
+  transition: var(--transition-time);
+  width: 100%;
+}
+#sideMenuDesktop a:hover {
+  text-decoration: none;
+  color: var(--active-link-color);
+}
+.side-btn-wrapper {
+  width: 95%;
+}
+#sideMenuDesktop a.active {
+  color: var(--active-link-color);
+  background-color: #282828;
+  border-radius: 8px;
+}
+
 .side-menu-main {
   height: 65%;
   width: 100%;
@@ -39,7 +62,6 @@
   background-color: rgba(139, 125, 0, 0.349);
 }
 
-/* custom nav */
 .side-menu-main.user-playlists::-webkit-scrollbar {
   width: 0.5em;
 }
@@ -49,6 +71,18 @@
   border-radius: 8px;
   width: 20px;
 }
+
+/* side menu media */
+@media (min-width: 769px) {
+}
+@media (min-width: 992px) {
+  #sideMenuDesktop {
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+}
+
 /* main section ------------------- */
 .home-wrapper {
   transition: var(--transition-time) ease;
@@ -133,22 +167,7 @@
 }
 
 /* rowsssss & caaaards */
-/* .card {
-  background-color: rgb(24, 24, 24);
-  cursor: pointer;
-  transition: background var(--transition-time) ease;
-}
-.card:hover {
-  background: #282828;
-}
-.card img {
-  min-height: 30vh;
-  max-height: 30vw;
-  object-fit: cover;
-} */
-/* .cards-section .row {
-  overflow-x: auto;
-} */
+
 .card-custom {
   height: 25vmin;
   width: 18vmin;
@@ -241,7 +260,7 @@
 }
 
 #mobileBottomMenu > .mobile-bottom-menu-wrapper > a {
-  color: #f8f8f883;
+  color: var(--unactive-link-color);
   font-weight: bold;
   margin-right: 0.6rem;
   margin-left: 0.6rem;
@@ -250,7 +269,7 @@
 
 #mobileBottomMenu > .mobile-bottom-menu-wrapper > a:hover,
 #mobileBottomMenu > .mobile-bottom-menu-wrapper > a:active {
-  color: #f8f8f8;
+  color: var(--active-link-color);
 }
 
 #mobileBottomMenu {
