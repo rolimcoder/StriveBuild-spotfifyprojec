@@ -202,6 +202,16 @@
     padding: 10px 20px;
   }
 }
+.dropdown-menu {
+  background: #282828;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #424141;
+}
 
 /* ============================= HOME MAIN SECTION ================================= */
 .home-main-section {
@@ -222,19 +232,20 @@
   z-index: 30;
 }
 #prevBtn,
-#nextBtn {
+#nextBtn,
+#openSideMenuBtn {
   font-size: 1.5rem;
 }
 
 #prevBtn.nav-link,
 #nextBtn.nav-link,
 #openSideMenuBtn.nav-link {
-  transition: var(--transition-time) ease;
+  color: var(--unactive-link-color);
 }
 #prevBtn.nav-link:hover,
 #nextBtn.nav-link:hover,
 #openSideMenuBtn.nav-link:hover {
-  transform: translateY(-1px);
+  color: var(--active-link-color);
 }
 
 #prevBtn.nav-link:active,

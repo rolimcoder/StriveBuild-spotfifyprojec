@@ -156,3 +156,9 @@ function installApp(e) {
   makeActiveSideMenu(e.currentTarget);
   showAppDownLoadPage();
 }
+
+// logout
+logoutDropDown.addEventListener('click', () => {
+  login.classList.remove('d-none');
+  home.classList.add('d-none');
+});
