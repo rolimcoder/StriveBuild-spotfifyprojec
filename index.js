@@ -97,3 +97,9 @@ function goTolibrary(e) {
   e.preventDefault();
   makeActive(e.currentTarget);
 }
+
+// spotify logo home page
+spotifyLogo.addEventListener('click', (e) => {
+  e.preventDefault();
+  showHomePage();
+});

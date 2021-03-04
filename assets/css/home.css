@@ -26,8 +26,30 @@
 .side-menu-header {
   height: 30%;
   width: 100%;
-  background-color: rgba(0, 139, 139, 0.568);
+  /* background-color: rgba(0, 139, 139, 0.568); */
 }
+.spotify-logo--text {
+  height: 40px;
+  color: #f8f8f8;
+}
+#sideMenuDesktop span {
+  line-height: 0.9;
+}
+#sideMenuDesktop a {
+  color: var(--unactive-link-color);
+  transition: var(--transition-time);
+  width: 80%;
+}
+#sideMenuDesktop a:hover {
+  text-decoration: none;
+  color: var(--active-link-color);
+}
+#sideMenuDesktop a.active {
+  color: var(--active-link-color);
+  background-color: #282828;
+  border-radius: 8px;
+}
+
 .side-menu-main {
   height: 65%;
   width: 100%;
@@ -39,7 +61,6 @@
   background-color: rgba(139, 125, 0, 0.349);
 }
 
-/* custom nav */
 .side-menu-main.user-playlists::-webkit-scrollbar {
   width: 0.5em;
 }
@@ -238,7 +259,7 @@
 }
 
 #mobileBottomMenu > .mobile-bottom-menu-wrapper > a {
-  color: #f8f8f883;
+  color: var(--unactive-link-color);
   font-weight: bold;
   margin-right: 0.6rem;
   margin-left: 0.6rem;
@@ -247,7 +268,7 @@
 
 #mobileBottomMenu > .mobile-bottom-menu-wrapper > a:hover,
 #mobileBottomMenu > .mobile-bottom-menu-wrapper > a:active {
-  color: #f8f8f8;
+  color: var(--active-link-color);
 }
 
 #mobileBottomMenu {

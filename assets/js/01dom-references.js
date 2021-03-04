@@ -10,3 +10,5 @@ const homeMainSection = document.querySelector('.home-main-section');
 const login = document.getElementById('login');
 const home = document.getElementById('home');
 const loginBtn = document.getElementById('loginBtn');
+const sideMenuDesktop = document.getElementById('sideMenuDesktop');
+const spotifyLogo = document.getElementById('spotifyLogo');
