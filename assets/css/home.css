@@ -25,12 +25,12 @@
 }
 /* side header----------- */
 .side-menu-header {
-  height: 30%;
+  /* height: 30%; */
   width: 100%;
 }
 .spotify-logo--text {
   height: 40px;
-  color: #f8f8f8;
+  color: #fff;
 }
 
 #sideMenuDesktop a {
@@ -95,11 +95,24 @@
 }
 
 /* side main --------------- */
-/* .side-menu-main {
-  height: 65%;
-  width: 100%;
-  background-color: rgba(139, 0, 0, 0.301);
-} */
+
+.side-menu-main {
+  height: 45vh;
+  line-height: 2;
+  /* width: 100%; */
+}
+
+.side-menu-main ul li {
+  list-style: none;
+}
+.side-menu-main ul {
+  padding: 0;
+}
+
+.side-menu-main * {
+  color: var(--unactive-link-color);
+  font-size: 0.8rem;
+}
 
 .side-menu-main.user-playlists::-webkit-scrollbar {
   width: 0.5em;

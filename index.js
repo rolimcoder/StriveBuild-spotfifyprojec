@@ -11,6 +11,7 @@ window.onload = () => {
   login.classList.add('d-none');
   home.classList.remove('d-none');
   showHomePage();
+  fillUsersPlayList(musicStore);
 };
 
 // change navbar color on scroll
