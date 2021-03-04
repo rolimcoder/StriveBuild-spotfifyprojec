@@ -273,6 +273,12 @@
 .card-body-custom {
   height: 7vmin;
 }
+.card-title-custom {
+  font-size: 0.6rem;
+}
+.card-text-custom {
+  font-size: 0.7rem;
+}
 
 @media (max-width: 767px) {
   .row-albums {
@@ -292,11 +298,22 @@
   }
 }
 
-.card-title-custom {
-  font-size: 1rem;
+@media (max-width: 576px) {
+  .card-title-custom {
+    font-size: 0.6rem;
+  }
+  .card-text-custom {
+    display: none;
+  }
+  .section-name {
+    font-size: 0.9rem;
+  }
 }
-.card-text-custom {
-  font-size: 0.5rem;
+
+@media (min-width: 2000px) {
+  .card-title-custom {
+    font-size: 0.8rem;
+  }
 }
 
 .card-play-btn > i,

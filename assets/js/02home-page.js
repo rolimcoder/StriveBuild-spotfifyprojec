@@ -4,9 +4,9 @@ function showHomePage() {
   sectionsData.forEach((section, idx) => {
     const { sectionName, albums } = section;
     const sectionHTML = `
-  <section id="section-${idx + 1}" class="cards-section mb-5">
+  <section id="section-${idx + 1}" class="cards-section mb-1 mb-md-5">
     <h4 class="section-name text-white font-weight-bold mb-2 display-5 pl-2">${sectionName}</h4>
-    <div class="d-flex flex-md-wrap row-albums mb-4">
+    <div class="d-flex flex-md-wrap row-albums mb-1">
         ${albums
           .map(
             (album) => `
@@ -17,7 +17,7 @@ function showHomePage() {
                     <a href="#" class="card-play-btn align-self-end d-none"><i class="fas fa-play-circle fa-3x"></i></a>
                     <a href="#" class="card-pause-btn align-self-end d-none"><i class="fas fa-pause-circle fa-3x"></i></a>
                   </div>
-                  <div class="card-body-custom p-3">
+                  <div class="card-body-custom px-2">
                     <h6 class="card-title-custom text-white text-truncate">${album.title}</h6>
                     <p class="card-text-custom text-muted">random text</p>
                   </div>
