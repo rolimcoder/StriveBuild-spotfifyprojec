@@ -109,8 +109,18 @@ function goToHome(e) {
   showHomePage();
 }
 function goTosearch(e) {
+  inputField.classList.add('animate__fadeInDown');
+  inputField.classList.remove('d-none');
   e.preventDefault();
   makeActive(e.currentTarget);
+  showSearchPage();
+}
+function goTosearchSide(e) {
+  inputField.classList.add('animate__fadeInDown');
+  inputField.classList.remove('d-none');
+
+  e.preventDefault();
+  makeActiveSideMenu(e.currentTarget);
   showSearchPage();
 }
 function goTolibrary(e) {
@@ -143,11 +153,7 @@ function goToHomeSide(e) {
   makeActiveSideMenu(e.currentTarget);
   showHomePage();
 }
-function goTosearchSide(e) {
-  e.preventDefault();
-  makeActiveSideMenu(e.currentTarget);
-  showSearchPage();
-}
+
 function goTolibrarySide(e) {
   e.preventDefault();
   makeActiveSideMenu(e.currentTarget);

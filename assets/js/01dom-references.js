@@ -1,4 +1,4 @@
-const userInput = document.getElementById("userInput");
+const userInput = document.getElementById('userInput');
 const userName = document.getElementById('userName');
 const openSideMenuBtn = document.getElementById('openSideMenuBtn');
 const prevBtn = document.getElementById('prevBtn');
@@ -28,5 +28,6 @@ console.log(logoutDropDown);
 console.log(addFavSongBtns);
 console.log(createPlaylistBtns);
 console.log(prevBtn);
-const toasterEntryPoint = document.getElementById("toasterEntryPoint");
-
+const toasterEntryPoint = document.getElementById('toasterEntryPoint');
+const inputField = document.querySelector('.input-search');
+console.log(inputField);
