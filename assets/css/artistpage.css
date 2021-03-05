@@ -55,6 +55,7 @@ div.jumbotron {
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
+  color: #f8f8f8; /*added just fro the test day*/
 }
 @media ()
 img[alt="mini-pick-profile"] {
@@ -65,9 +66,6 @@ a.link-more {
   text-decoration: none;
   color: #f8f8f8;
   font-size: 1rem;
-}
-h1{
-  color: #f8f8f8;
 }
 h2.popular-releases-title,
 h2.artist-pick-title {
