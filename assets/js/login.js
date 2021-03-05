@@ -8,6 +8,7 @@
 });
  */
 
+//  this is for auto login, in order to start coding right away without having to click each time login
 window.onload = () => {
   login.classList.add('d-none');
   home.classList.remove('d-none');
@@ -21,4 +22,4 @@ window.onload = () => {
 
 // call the showHomePage()
 
-//
+// call fillUsersPlayList(musicStore, [userPlaylists, sideMenuMobile]);
