@@ -57,7 +57,6 @@ sideMenuMobileBtn.addEventListener('click', (e) => {
   musicPlayer.classList.add('animate__bounceInUp');
   mobileBottomMenu.classList.add('animate__bounceInUp');
   const sideUlLis = sideMenuMobile.querySelectorAll('li');
-  console.log(sideUlLis);
   sideUlLis.forEach((li) => li.classList.remove('animate__fadeInLeft'));
 });
 
