@@ -31,7 +31,6 @@ function showToaster(user) {
   }, 2000);
 }
 
-window.onload = () => loginBtn.click();
 /* loginBtn.addEventListener('click', () => {
   login.classList.add('d-none');
   home.classList.remove('d-none');

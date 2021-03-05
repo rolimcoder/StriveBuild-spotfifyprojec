@@ -2,6 +2,7 @@ const userInput = document.getElementById('userInput');
 const userName = document.getElementById('userName');
 const openSideMenuBtn = document.getElementById('openSideMenuBtn');
 const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 const homeWrapper = document.querySelector('.home-wrapper');
 const musicPlayer = document.getElementById('musicPlayer');
 const homeContainer = document.querySelector('.home-container');

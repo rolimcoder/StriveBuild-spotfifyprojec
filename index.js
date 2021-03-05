@@ -103,24 +103,31 @@ function makeActiveSideMenu(target) {
 }
 
 function goToHome(e) {
+  inputField.value = '';
+  inputField.classList.add('d-none');
+  nextBtn.classList.remove('d-none');
   e.preventDefault();
   makeActive(e.currentTarget);
   showHomePage();
 }
 function goTosearch(e) {
+  nextBtn.classList.add('d-none');
   inputField.classList.add('animate__fadeInDown');
   inputField.classList.remove('d-none');
   e.preventDefault();
   makeActive(e.currentTarget);
   showSearchPage();
+  inputField.focus();
 }
 function goTosearchSide(e) {
+  nextBtn.classList.add('d-none');
   inputField.classList.add('animate__fadeInDown');
   inputField.classList.remove('d-none');
 
   e.preventDefault();
   makeActiveSideMenu(e.currentTarget);
   showSearchPage();
+  inputField.focus();
 }
 function goTolibrary(e) {
   e.preventDefault();
@@ -139,6 +146,9 @@ spotifyLogo.addEventListener('click', (e) => {
 
 // go to home from prev Btn
 prevBtn.addEventListener('click', (e) => {
+  inputField.value = '';
+  inputField.classList.add('d-none');
+  nextBtn.classList.remove('d-none');
   e.preventDefault();
   homeSideDesktop.classList.add('active');
   searchSideDesktop.classList.remove('active');
@@ -148,6 +158,9 @@ prevBtn.addEventListener('click', (e) => {
 });
 
 function goToHomeSide(e) {
+  inputField.value = '';
+  inputField.classList.add('d-none');
+  nextBtn.classList.remove('d-none');
   e.preventDefault();
   makeActiveSideMenu(e.currentTarget);
   showHomePage();
