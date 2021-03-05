@@ -1,13 +1,13 @@
-function showAlbumPage() {
+function showAlbumPage(url, title) {
   jsEntryPoint.innerHTML = `
-          <div class="container" style="background-color: #131313;">
+          <div class="container mt-4 animate__animated animate__faster" style="background-color: #131313;">
             <div class="row">
               <div class="col-lg-4 col-md-12 font-weight-light" style="border: black;">
                 <div class="" style="border: black;" >
-                  <img src="https://www.udiscovermusic.com/wp-content/uploads/2019/03/Queen-II-album-cover-820.jpg" class="card-img-top" alt="...">
+                  <img src="${url}" class="card-img-top" alt="...">
                   <div class="card-body text-center text-light" style="background-color: #131313;">
-                    <h5 class="card-title"> Queen II (Delux Edition <br> 2011 Remaster)</h5>
-                    <h6 class="text-muted" style="font-size: 13px;">Queen</h6>
+                    <h5 class="card-title">${title}</h5>
+                    <h6 class="text-muted" style="font-size: 13px;">Sad Api Cravers</h6>
                     <a href="#" class="btn btn-success rounded-pill btn-block mt-4 mb-2">Play</a>
                     <div class="card-text">
                       <h6 class="text-light text-center text-muted mb-4">1974 - 16 SONGS</h6>
@@ -23,72 +23,72 @@ function showAlbumPage() {
                     <tbody>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td> Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td> I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td class="mr-0">1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br><h6 style="font-size: 10px;" class="text-muted" >Queen</h6></td>
+                        <td>I wish I had an Api <br><h6 style="font-size: 10px;" class="text-muted" >Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                       <tr>
                         <th scope="row"><i class="fas fa-music"></i></th>
-                        <td>Procession - Remastered 2011 <br> <h6 style="font-size: 10px;" class="text-muted">Queen</h6></td>
+                        <td>I wish I had an Api <br> <h6 style="font-size: 10px;" class="text-muted">Sad Api Cravers</h6></td>
                         <td>1.16</td>
                       </tr>
                     </tbody>
@@ -101,4 +101,11 @@ function showAlbumPage() {
       
 
   `;
+  const container = document.querySelector(
+    '.container.mt-4.animate__animated.animate__faster'
+  );
+  container.classList.remove('animate__fadeInDown');
+  container.classList.add('animate__fadeInDown');
 }
+
+// Sad Api Cravers II (Delux Edition <br> 2011 Remaster)

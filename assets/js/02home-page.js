@@ -11,7 +11,7 @@ function showHomePage() {
           .map(
             (album) => `
              <div class="px-2 mb-3">
-                <div class="card-custom shadow">
+                <div class="card-custom shadow animate__animated animate__faster">
                   <div class="card-image-wrapper d-flex flex-column p-2">
                     <img src="${album.coverUrl}" class="img-fluid rounded shadow-lg" alt="" />
                     <a href="#" class="card-play-btn align-self-end "><i class="fas fa-play-circle "></i></a>
@@ -29,5 +29,11 @@ function showHomePage() {
   </section>
   `;
     jsEntryPoint.insertAdjacentHTML('beforeend', sectionHTML);
+  });
+  const cards = document.querySelectorAll('.card-custom');
+  cards.forEach((card) => {
+    card.addEventListener('click', getCardsInfo);
+    card.classList.remove('animate__fadeInUp');
+    card.classList.add('animate__fadeInUp');
   });
 }
