@@ -54,6 +54,7 @@ div.jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   height: 500px;
   color: #f8f8f8; /*added just fro the test day*/
 }
@@ -81,4 +82,8 @@ a.link-more {
 h2.popular-releases-title,
 h2.artist-pick-title {
   font-size: 1.5rem;
+}
+.top-five-img{
+  max-width: 40px;
+  height: auto;
 }
