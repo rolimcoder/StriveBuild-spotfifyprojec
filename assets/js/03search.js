@@ -6,11 +6,11 @@ function showSearchPage() {
       ${searchDatas
         .map(
           (searchDatas) => `
-           <div class="px-2 mb-3" >
-              <div class="card-custom rounded shadow overflow-hidden" style = "background-color:${searchDatas.color}; style = "position: relative">
+           <div class="px-2 mb-3 row-albums align-items-stretch" >
+              <div class="card-custom rounded shadow overflow-hidden cardMobile" style = "background-color:${searchDatas.color} ; style = "position: relative">
                 <div class="card-image-wrapper d-flex flex-column p-2 ">
                 <div class="card-body-custom p-3">
-                  <h6 class="card-title-custom text-white text-truncate">${searchDatas.title}</h6>
+                  <h6 class="card-title-custom text-white text-truncate cardTextMobile" style= "font-size: 0.9rem;">${searchDatas.title}</h6>
                   <img src="${searchDatas.url}" class="img-fluid rounded mt-5 ml-4" style = "
                   overflow:hidden;
                   cursor: wait;    
