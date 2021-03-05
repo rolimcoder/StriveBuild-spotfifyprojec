@@ -32,14 +32,11 @@ const srcImgTop5 = [
 
 ];
 
-const imgTargetTop5Html = document.querySelectorAll('imgArtistTop1','imgArtistTop2','imgArtistTop3','imgArtistTop4','imgArtistTop5')
-const entryPointForAlbums = document.getElementById(`entryPointForAlbums`); //<---------Add this reference to 01dom-refenrences.js
+
+ //<---------Add this reference to 01dom-refenrences.js
 
 
 function showArtistPage () {
-  imgTargetTop5Html.forEach(i) => {
-  imgTargetTop5Html[i].setAttribute(src=`${srcImgTop5[i]}`)
-}
 jsEntryPoint.innerHTML = `<!-----------------Artist Page content-------------------------->    
 <!--Hero Section-->
 <div class="jumbotron pb-0 jumbotron-fluid d-flex justify-content-start align-items-end">
@@ -115,7 +112,7 @@ jsEntryPoint.innerHTML = `<!-----------------Artist Page content----------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img id="imgArtistTop1" src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop1" class="top-five-img" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -135,7 +132,7 @@ jsEntryPoint.innerHTML = `<!-----------------Artist Page content----------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img id="imgArtistTop2" src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop2" class="top-five-img" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -155,7 +152,7 @@ jsEntryPoint.innerHTML = `<!-----------------Artist Page content----------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img id="imgArtistTop3" src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop3" class="top-five-img" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -175,7 +172,7 @@ jsEntryPoint.innerHTML = `<!-----------------Artist Page content----------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img id="imgArtistTop4" src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop4" class="top-five-img" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -195,7 +192,7 @@ jsEntryPoint.innerHTML = `<!-----------------Artist Page content----------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img id="imgArtistTop5" src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop5" class="top-five-img" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -239,11 +236,16 @@ jsEntryPoint.innerHTML = `<!-----------------Artist Page content----------------
 <!--End Hero Section-->
 <div id="entryPointForAlbums"></div>
 <!------------------------End content artist-page---------------->`;
+const imgTargetTop5Html = document.querySelectorAll('.top-five-img');
+  imgTargetTop5Html.forEach((img,i) => {
+  img.src = srcImgTop5[i]
+});
 injectAlbumsInArtistPage() //Calling function to inject Albums
 }
 
 //Ardi's function refurbished to inject albums in our artistPage------------->
 function injectAlbumsInArtistPage() {
+  const entryPointForAlbums = document.getElementById(`entryPointForAlbums`);
   entryPointForAlbums.innerHTML = '';
   sectionsData.forEach((section, idx) => {
     const { sectionName, albums } = section;
