@@ -66,5 +66,7 @@
     bottom: 45px;
   }
 }
-
+i {
+  cursor: pointer;
+}
 /*++++ Here End Added for David-Z*/
