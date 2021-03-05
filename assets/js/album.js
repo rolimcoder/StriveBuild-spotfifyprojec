@@ -1,6 +1,6 @@
 function showAlbumPage(url, title) {
   jsEntryPoint.innerHTML = `
-          <div class="container mt-4" style="background-color: #131313;">
+          <div class="container mt-4 animate__animated animate__faster" style="background-color: #131313;">
             <div class="row">
               <div class="col-lg-4 col-md-12 font-weight-light" style="border: black;">
                 <div class="" style="border: black;" >
