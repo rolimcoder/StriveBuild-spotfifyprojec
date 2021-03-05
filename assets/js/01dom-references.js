@@ -23,7 +23,3 @@ const userPlaylists = document.querySelector('.side-menu-main.user-playlists');
 const installAppBtn = document.getElementById('installAppBtn');
 const sideMenuMobileBtn = document.querySelector('#sideMenuMobile a');
 const logoutDropDown = document.querySelector('.logout');
-console.log(logoutDropDown);
-console.log(addFavSongBtns);
-console.log(createPlaylistBtns);
-console.log(prevBtn);

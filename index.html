@@ -56,7 +56,7 @@
   <body>
     <!----------------------  login  ----------------------->
 
-    <div id="login">
+    <div id="login" class="animate__animated animate__faster animate__zoomIn">
       <h2 class="text-center text-dark my-3">
         <i class="fab fa-spotify"></i> Spotify
         <span style="font-size: 20px; margin-left: -12px">&#174;</span>
@@ -149,7 +149,10 @@
 
     <!----------------------  main  ----------------------->
 
-    <div id="home" class="container-fluid home-container px-0 d-none">
+    <div
+      id="home"
+      class="container-fluid home-container px-0 d-none animate__animated animate__faster"
+    >
       <div class="home-wrapper d-flex w-100">
         <!----------------------  Sidemenu  ----------------------->
         <aside class="d-none d-md-block py-4" id="sideMenuDesktop">
@@ -683,6 +686,7 @@
     <script src="assets/js/users-playlists.js"></script>
     <script src="assets/js/app-download-page.js"></script>
     <script src="assets/js/album.js"></script>
+    <script src="/assets/js/cards-onlick-album.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
