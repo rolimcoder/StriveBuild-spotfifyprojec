@@ -1,5 +1,6 @@
 const userName = document.getElementById('userName');
 const openSideMenuBtn = document.getElementById('openSideMenuBtn');
+const prevBtn = document.getElementById('prevBtn');
 const homeWrapper = document.querySelector('.home-wrapper');
 const musicPlayer = document.getElementById('musicPlayer');
 const homeContainer = document.querySelector('.home-container');
@@ -23,6 +24,6 @@ const installAppBtn = document.getElementById('installAppBtn');
 const sideMenuMobileBtn = document.querySelector('#sideMenuMobile a');
 const logoutDropDown = document.querySelector('.logout');
 console.log(logoutDropDown);
-
 console.log(addFavSongBtns);
 console.log(createPlaylistBtns);
+console.log(prevBtn);

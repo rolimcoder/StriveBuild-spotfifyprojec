@@ -128,6 +128,16 @@ spotifyLogo.addEventListener('click', (e) => {
   showHomePage();
 });
 
+// go to home from prev Btn
+prevBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  homeSideDesktop.classList.add('active');
+  searchSideDesktop.classList.remove('active');
+  librarySideDesktop.classList.remove('active');
+  installAppBtn.classList.remove('active');
+  showHomePage();
+});
+
 function goToHomeSide(e) {
   e.preventDefault();
   makeActiveSideMenu(e.currentTarget);
