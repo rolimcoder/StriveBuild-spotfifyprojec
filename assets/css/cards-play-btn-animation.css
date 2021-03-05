@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.card-custom {
+  transition: all var(--transition-time) ease;
+}
+
 .card-play-btn {
   font-size: 2rem;
   position: absolute;
