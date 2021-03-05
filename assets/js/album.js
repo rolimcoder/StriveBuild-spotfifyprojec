@@ -101,6 +101,11 @@ function showAlbumPage(url, title) {
       
 
   `;
+  const container = document.querySelector(
+    '.container.mt-4.animate__animated.animate__faster'
+  );
+  container.classList.remove('animate__fadeInDown');
+  container.classList.add('animate__fadeInDown');
 }
 
 // Sad Api Cravers II (Delux Edition <br> 2011 Remaster)

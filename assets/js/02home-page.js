@@ -31,7 +31,7 @@ function showHomePage() {
     jsEntryPoint.insertAdjacentHTML('beforeend', sectionHTML);
   });
   const cards = document.querySelectorAll('.card-custom');
-  cards.forEach((card, idx) => {
+  cards.forEach((card) => {
     card.addEventListener('click', getCardsInfo);
     card.classList.remove('animate__fadeInUp');
     card.classList.add('animate__fadeInUp');
