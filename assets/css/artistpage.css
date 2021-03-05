@@ -1,0 +1,89 @@
+body {
+  background-color: #181818;
+}
+
+.my-button {
+  border-radius: 50px;
+  background-color: #1db954;
+  color: #f8f9fa;
+}
+.my-btn-lg {
+  padding: 1rem 1.6rem;
+  font-size: 30px;
+  line-height: 1.5;
+}
+.my-btn.btn-outline-light {
+  border-color: transparent;
+}
+.show > .btn-outline-light.dropdown-toggle {
+  color: #f8f8f8;
+  background-color: #282828;
+  border-color: transparent;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "...";
+  border: 0;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 0.875rem;
+  color: #f8f8f8;
+  text-align: left;
+  list-style: none;
+  background-color: #282828;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.dropdown-menu div a {
+  color: #f8f8f8;
+}
+div.jumbotron {
+  background-image: url("/David-Z/AssetsArtistPage/md.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 500px;
+  color: #f8f8f8; /*added just fro the test day*/
+}
+
+@media only screen and (max-width: 768px) {
+ div.jumbotron{
+   background-image: url("/David-Z/AssetsArtistPage/sm.png");
+ }
+}
+@media only screen and (min-width: 992px) {
+  div.jumbotron{
+    background-image: url("/David-Z/AssetsArtistPage/lg-xl.png");
+  }
+ }
+
+img[alt="mini-pick-profile"] {
+  border-radius: 50px;
+}
+a.link-artis-pick,
+a.link-more {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-size: 1rem;
+}
+h2.popular-releases-title,
+h2.artist-pick-title {
+  font-size: 1.5rem;
+}
+.top-five-img{
+  max-width: 40px;
+  height: auto;
+}
