@@ -1,7 +1,7 @@
 function showSearchPage() {
   jsEntryPoint.innerHTML = `
   <section class="cards-section mb-5">
-  <h4 class="text-white font-weight-bold mb-3 display-5 pl-5">Brows All</h4>
+  <h4 class="text-white font-weight-bold mb-3 display-5 pl-5">Browse All</h4>
   <div class="d-flex flex-wrap col-lg-12 col-md-10 row-albums mb-4 justify-content-center">
       ${searchDatas
         .map(
