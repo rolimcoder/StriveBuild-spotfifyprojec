@@ -145,8 +145,8 @@ const sectionsData = [
       },
       {
         coverUrl:
-          'https://i.scdn.co/image/ab67706c0000da84f155a408b137b9cd602b9910',
-        title: 'ADHD HyperFocus - Techno Study ',
+          'https://i.scdn.co/image/ab67616d0000b2739a482180e6a306229bff49dc',
+        title: 'All Killer, No Filler',
       },
       {
         coverUrl:
@@ -959,8 +959,8 @@ const sectionsData = [
       },
       {
         coverUrl:
-          'https://i.scdn.co/image/ab67616d0000b2739a482180e6a306229bff49dc',
-        title: 'All Killer, No Filler',
+          'https://i.scdn.co/image/ab67706c0000da84f155a408b137b9cd602b9910',
+        title: 'ADHD HyperFocus - Techno Study ',
       },
       {
         coverUrl:

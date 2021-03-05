@@ -17,6 +17,8 @@
   --light: #f8f8f8;
   --unactive-link-color: #b3b3b3;
   --active-link-color: #fff;
+
+  --animate-delay: 0.5s;
 }
 
 html {

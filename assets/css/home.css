@@ -23,6 +23,17 @@
   top: 0;
   bottom: 0;
 }
+
+@media (max-width: 768px) {
+  #sideMenuDesktop {
+    width: 250px;
+  }
+}
+@media (min-width: 992px) {
+  #sideMenuDesktop {
+    width: 300px;
+  }
+}
 /* side header----------- */
 .side-menu-header {
   /* height: 30%; */
@@ -74,12 +85,7 @@
   height: 32px;
   padding: 4px;
   display: flex;
-
-  /* -webkit-box-align: center; */
-  /* -ms-flex-align: center; */
   align-items: center;
-  /* -webkit-box-pack: center; */
-  /* -ms-flex-pack: center; */
   justify-content: center;
 }
 .add-fav-song-svg-wrapper > svg > path + path {
@@ -97,13 +103,14 @@
 /* side main --------------- */
 
 .side-menu-main {
-  height: 50vh;
+  height: 60vh;
   line-height: 2;
   /* width: 100%; */
 }
-@media (min-width: 769px) {
+
+@media (max-height: 1080px) {
   .side-menu-main {
-    height: 45vh;
+    height: 47vh;
   }
 }
 
@@ -130,8 +137,12 @@
 }
 
 /* side footer */
+
 .side-menu-footer {
-  /* height: 2vh; */
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  right: 0;
 }
 .install-svg {
   fill: var(--unactive-link-color);
@@ -140,16 +151,6 @@
 
 .side-menu-footer:hover .install-svg {
   fill: var(--active-link-color);
-}
-/* side menu media */
-@media (min-width: 769px) {
-}
-@media (min-width: 992px) {
-  #sideMenuDesktop {
-    width: 300px;
-  }
-}
-@media (min-width: 1200px) {
 }
 
 /* main section ------------------- */
@@ -171,8 +172,8 @@
   background-color: #000;
 }
 #userImg {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
 }
 #userName {
   font-size: 1rem;
@@ -191,18 +192,20 @@
     padding: 10px 20px;
   }
 }
+.dropdown-menu {
+  background: #282828;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #424141;
+}
 
 /* ============================= HOME MAIN SECTION ================================= */
 .home-main-section {
   background-color: #131313;
-  /* background: rgb(40, 137, 143);
-  background: linear-gradient(
-    175deg,
-    rgba(40, 137, 143, 1) 8%,
-    rgba(47, 58, 106, 0.9911151960784313) 42%,
-    rgba(6, 18, 22, 1) 67%,
-    rgba(0, 0, 0, 1) 100%
-  ); */
 }
 
 #homeMainNav .nav-link {
@@ -218,22 +221,27 @@
   margin-right: -20px;
   z-index: 30;
 }
+#prevBtn,
+#nextBtn,
+#openSideMenuBtn {
+  font-size: 1.5rem;
+}
 
 #prevBtn.nav-link,
 #nextBtn.nav-link,
 #openSideMenuBtn.nav-link {
-  transition: var(--transition-time) ease;
+  color: var(--unactive-link-color);
 }
 #prevBtn.nav-link:hover,
 #nextBtn.nav-link:hover,
 #openSideMenuBtn.nav-link:hover {
-  transform: scale(1.1);
+  color: var(--active-link-color);
 }
 
 #prevBtn.nav-link:active,
 #nextBtn.nav-link:active,
 #openSideMenuBtn.nav-link:active {
-  transform: scale(1);
+  transform: scale(0.9);
 }
 
 /* rowsssss & caaaards */
@@ -260,6 +268,12 @@
 .card-body-custom {
   height: 7vmin;
 }
+.card-title-custom {
+  font-size: 0.6rem;
+}
+.card-text-custom {
+  font-size: 0.7rem;
+}
 
 @media (max-width: 767px) {
   .row-albums {
@@ -279,11 +293,22 @@
   }
 }
 
-.card-title-custom {
-  font-size: 1rem;
+@media (max-width: 576px) {
+  .card-title-custom {
+    font-size: 0.6rem;
+  }
+  .card-text-custom {
+    display: none;
+  }
+  .section-name {
+    font-size: 0.9rem;
+  }
 }
-.card-text-custom {
-  font-size: 0.5rem;
+
+@media (min-width: 2000px) {
+  .card-title-custom {
+    font-size: 0.8rem;
+  }
 }
 
 .card-play-btn > i,
@@ -354,25 +379,10 @@
 
 /* ============================= FOOTER END 🦶🏻================================== */
 
-/* ============================= SIDE MENU MOBILE 🥗📲================================= */
-
-#sideMenuMobile {
-  height: 100vh;
-  background: purple;
-  width: calc(100vw - 20%);
-  position: fixed;
-  top: 0;
-  transform: translateX(-100%);
-  transition: var(--transition-time) ease;
-}
-
 /* ============================= SIDE MENU MOBILE END ================================ */
 
 /* animation playground 😄 🎮 */
-.main-translated-out {
-  transform: translateX(80%);
-}
 
-.side-mobile-menu-translated-in {
+/* .side-mobile-menu-translated-in {
   transform: translateX(0);
-}
+} */
