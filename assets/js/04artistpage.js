@@ -1,51 +1,54 @@
+//Src artist
+const infoUrlArtist = [
+  "https://i.scdn.co/image/ab67616d0000485140f115acccc5ab265b54f472",
+  "https://i.scdn.co/image/ab67616d00001e02ae33b6bc69fe5405f6884b7e",
+  "https://i.scdn.co/image/ab67616d00001e02365b3fb800c19f7ff72602da",
+  "https://i.scdn.co/image/ab67616d00001e0256ff19308ebeb48e2ba6094b",
+  "https://i.scdn.co/image/ab67616d00001e02a4fe49eb27e8152710e7a590",
+  "https://i.scdn.co/image/ab67616d00001e02fe6a98e875958c7d7080584e",
+  "https://i.scdn.co/image/ab67706c0000da848bc5396ddce052e8763bb7f0",
+  "https://i.scdn.co/image/f603978d2974c3132fc13202f8555305dbd71710",
+  "https://i.scdn.co/image/ab67616d0000b273844c2527b8254266a3d8d300",
+  "https://i.scdn.co/image/ab67616d0000b273ae33b6bc69fe5405f6884b7e",
+  "https://i.scdn.co/image/ab67706f0000000243a034d458fe6e8c1904bc77",
+  "https://seeded-session-images.scdn.co/v1/img/artist/3DiDSECUqqY1AuBP8qtaIa/es",
+  "https://i.scdn.co/image/783792fe8f8a91c62685a3d686c8aa03366dc505",
+  "https://i.scdn.co/image/21ea1b285cbfa15ea93d2d943947b483d8e842aa",
+  "https://i.scdn.co/image/ab67616d0000b273365b3fb800c19f7ff72602da",
+  "https://i.scdn.co/image/ab67616d0000b273fec1b815bb3c50a64a90fd10",
+  "https://i.scdn.co/image/ab67706c0000da846ca83241d5de78db8b8dc235",
+  "https://i.scdn.co/image/ab67706c0000da848bc5396ddce052e8763bb7f0",
+  "https://i.scdn.co/image/ab67616d0000485140f115acccc5ab265b54f472"
+];
+//---------------------------------------<<----------------------------->>
 // showArtistPage function
+const srcImgforPlayerMusic = "https://i.scdn.co/image/ab67616d0000485140f115acccc5ab265b54f472";
+const srcImgTop5 = [
+  "https://i.scdn.co/image/ab67616d00001e02ae33b6bc69fe5405f6884b7e",
+  "https://i.scdn.co/image/ab67616d00001e02365b3fb800c19f7ff72602da",
+  "https://i.scdn.co/image/ab67616d00001e0256ff19308ebeb48e2ba6094b",
+  "https://i.scdn.co/image/ab67616d00001e02a4fe49eb27e8152710e7a590",
+  "https://i.scdn.co/image/ab67616d00001e02fe6a98e875958c7d7080584e"
 
-const entryPointForAlbums = document.getElementById(`entryPointForAlbums`) //<---------Add this reference to 01dom-refenrences.js
+];
 
-//Ardi's function refurbished to inject albums in our artistPage------------->
-
-function injectAlbumsInArtistPage() {
-    entryPointForAlbums.innerHTML = '';
-    sectionsData.forEach((section, idx) => {
-      const { sectionName, albums } = section;
-      const sectionHTML = `
-    <section id="section-${idx + 1}" class="cards-section mb-5">
-      <h4 class="section-name text-white font-weight-bold mb-2 display-5 pl-2">${sectionName}</h4>
-      <div class="d-flex flex-md-wrap row-albums mb-4">
-          ${albums
-            .map(
-              (album) => `
-               <div class="px-2 mb-3">
-                  <div class="card-custom shadow">
-                    <div class="card-image-wrapper d-flex flex-column p-2">
-                      <img src="${album.coverUrl}" class="img-fluid rounded" alt="" />
-                      <a href="#" class="card-play-btn align-self-end d-none"><i class="fas fa-play-circle fa-3x"></i></a>
-                      <a href="#" class="card-pause-btn align-self-end d-none"><i class="fas fa-pause-circle fa-3x"></i></a>
-                    </div>
-                    <div class="card-body-custom p-3">
-                      <h6 class="card-title-custom text-white text-truncate">${album.title}</h6>
-                      <p class="card-text-custom text-muted">random text</p>
-                    </div>
-                  </div>
-                </div>
-          `
-            )
-            .join('')}
-      </div>
-    </section>
-    `;
-      jsEntryPoint.insertAdjacentHTML('beforeend', sectionHTML);
-    });
-  }
+const imgTargetTop5Html = document.querySelectorAll('imgArtistTop1','imgArtistTop2','imgArtistTop3','imgArtistTop4','imgArtistTop5')
+const entryPointForAlbums = document.getElementById(`entryPointForAlbums`); //<---------Add this reference to 01dom-refenrences.js
 
 
 function showArtistPage () {
-jsEntryPoint.innerHTML = '';
-const artistPage = `<!-----------------Artist Page content-------------------------->    
+  imgTargetTop5Html.forEach(i) => {
+  imgTargetTop5Html[i].setAttribute(src=`${srcImgTop5[i]}`)
+}
+jsEntryPoint.innerHTML = `<!-----------------Artist Page content-------------------------->    
 <!--Hero Section-->
-<div class="jumbotron jumbotron-fluid d-flex justify-content-start align-items-end">
+<div class="jumbotron pb-0 jumbotron-fluid d-flex justify-content-start align-items-end">
   <div class="col">
-    <h1 class="display-1">Artist name</h1>
+    <span>
+    <i class="fas fa-certificate text-primary"></i>
+    Artista Verificado
+    </span>
+    <h1 class="display-1">Alicia Keys</h1>
     <p class="lead">806.705 monthly listeners</p>
   </div>
 </div>
@@ -112,7 +115,7 @@ const artistPage = `<!-----------------Artist Page content----------------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop1" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -132,7 +135,7 @@ const artistPage = `<!-----------------Artist Page content----------------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop2" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -152,7 +155,7 @@ const artistPage = `<!-----------------Artist Page content----------------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop3" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -172,7 +175,7 @@ const artistPage = `<!-----------------Artist Page content----------------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop4" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -192,7 +195,7 @@ const artistPage = `<!-----------------Artist Page content----------------------
               <span> <i class="fas fa-play"></i></span>
             </div>
             <div class="d-flex align-items-center">
-              <img src="https://via.placeholder.com/40" alt="minicover">
+              <img id="imgArtistTop5" src="https://via.placeholder.com/40" alt="minicover">
               <Span class="mx-2">Title</Span>
             </div>
             <div class="d-flex">
@@ -236,9 +239,41 @@ const artistPage = `<!-----------------Artist Page content----------------------
 <!--End Hero Section-->
 <div id="entryPointForAlbums"></div>
 <!------------------------End content artist-page---------------->`;
-jsEntryPoint.insertAdjacentHTML('beforeend', artistPage);
 injectAlbumsInArtistPage() //Calling function to inject Albums
 }
 
-
+//Ardi's function refurbished to inject albums in our artistPage------------->
+function injectAlbumsInArtistPage() {
+  entryPointForAlbums.innerHTML = '';
+  sectionsData.forEach((section, idx) => {
+    const { sectionName, albums } = section;
+    const sectionHTML = `
+  <section id="section-${idx + 1}" class="cards-section mb-5">
+    <h4 class="section-name text-white font-weight-bold mb-2 display-5 pl-2">${sectionName}</h4>
+    <div class="d-flex flex-md-wrap row-albums mb-4">
+        ${albums
+          .map(
+            (album) => `
+             <div class="px-2 mb-3">
+                <div class="card-custom shadow">
+                  <div class="card-image-wrapper d-flex flex-column p-2">
+                    <img src="${album.coverUrl}" class="img-fluid rounded" alt="" />
+                    <a href="#" class="card-play-btn align-self-end d-none"><i class="fas fa-play-circle fa-3x"></i></a>
+                    <a href="#" class="card-pause-btn align-self-end d-none"><i class="fas fa-pause-circle fa-3x"></i></a>
+                  </div>
+                  <div class="card-body-custom p-3">
+                    <h6 class="card-title-custom text-white text-truncate">${album.title}</h6>
+                    <p class="card-text-custom text-muted">random text</p>
+                  </div>
+                </div>
+              </div>
+        `
+          )
+          .join('')}
+    </div>
+  </section>
+  `;
+    entryPointForAlbums.insertAdjacentHTML('beforeend', sectionHTML);
+  });
+};
 
