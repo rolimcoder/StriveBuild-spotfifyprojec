@@ -14,7 +14,7 @@ function showHomePage() {
                 <div class="card-custom shadow">
                   <div class="card-image-wrapper d-flex flex-column p-2">
                     <img src="${album.coverUrl}" class="img-fluid rounded shadow-lg" alt="" />
-                    <a href="#" class="card-play-btn align-self-end "><i class="fas fa-play-circle fa-2x"></i></a>
+                    <a href="#" class="card-play-btn align-self-end "><i class="fas fa-play-circle "></i></a>
                   </div>
                   <div class="card-body-custom px-2">
                     <h6 class="card-title-custom text-white text-truncate">${album.title}</h6>
