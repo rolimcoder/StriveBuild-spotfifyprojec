@@ -29,3 +29,4 @@ console.log(addFavSongBtns);
 console.log(createPlaylistBtns);
 console.log(prevBtn);
 const toasterEntryPoint = document.getElementById("toasterEntryPoint");
+

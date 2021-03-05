@@ -37,7 +37,7 @@ function hideHome(e) {
   mobileBottomMenu.classList.remove('animate__bounceInUp');
   sideMenuMobileBtn.classList.add('animate__bounceInDown');
   const sideUlLis = sideMenuMobile.querySelectorAll('li');
-  console.log(sideUlLis);
+
   sideUlLis.forEach((li, idx) => {
     setTimeout(() => {
       li.classList.add('animate__fadeInLeft');
@@ -162,6 +162,12 @@ function installApp(e) {
 
 // logout
 logoutDropDown.addEventListener('click', () => {
-  login.classList.remove('d-none');
-  home.classList.add('d-none');
+  home.classList.add('animate__fadeOutLeft');
+  setTimeout(() => {
+    home.classList.add('d-none');
+  }, 600);
+
+  setTimeout(() => {
+    login.classList.remove('d-none');
+  }, 600);
 });
