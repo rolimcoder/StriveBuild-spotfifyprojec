@@ -30,4 +30,6 @@ function showHomePage() {
   `;
     jsEntryPoint.insertAdjacentHTML('beforeend', sectionHTML);
   });
+  const cards = document.querySelectorAll('.card-custom');
+  cards.forEach((card) => card.addEventListener('click', getCardsInfo));
 }

@@ -1085,5 +1085,3 @@ const musicStore = sectionsData.reduce((acc, cv) => {
   cv.albums.forEach((album) => acc.push(album));
   return acc;
 }, []);
-
-console.log(musicStore);
