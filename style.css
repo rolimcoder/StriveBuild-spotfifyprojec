@@ -1,12 +1,12 @@
 /* fonts */
 @font-face {
   font-family: 'Circular';
-  src: url(/assets/fonts/lineto-circular-black.ttf);
+  src: url('./assets/fonts/lineto-circular-black.ttf');
   font-weight: 800;
 }
 @font-face {
   font-family: 'Circular Pro';
-  src: url(/assets/fonts/lineto-circular-pro-medium.ttf);
+  src: url('./assets/fonts/lineto-circular-pro-medium.ttf');
   font-weight: 500;
 }
 

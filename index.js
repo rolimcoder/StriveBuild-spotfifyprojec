@@ -2,7 +2,6 @@
 window.addEventListener('scroll', changeNavBg);
 
 function changeNavBg() {
-  console.log(pageYOffset);
   if (pageYOffset > 100) {
     if (navBar.classList.contains('backdrop-blur')) return;
     navBar.style.transform = 'translateY(-200px)';
