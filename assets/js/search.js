@@ -4,18 +4,18 @@ inputField.addEventListener('keyup', function (e) {
     e.preventDefault();
 
     jsEntryPoint.innerHTML = `
-       <div class="container-fluid p-3">
+    <div class="container-fluid p-3 vh-100">
       <div class="row m-1 text-white my-border-light">
-        <div class="col-3 h-100">
+        <div class="col-12 col-lg-3 h-100">
           <img
-            src="/David-Z/AssetsArtistPage/Card-img-artist.png"
+            src="./David-Z/AssetsArtistPage/Card-img-artist.png"
             alt="img-card-artist"
-            class="img-fluid alicia-keys"
+            class="img-fluid w-100 alicia-keys"
           />
         </div>
 
-        <div class="col-9 m-auto">
-          <div class="row no-gutters ">
+        <div class="col-12 col-lg-12 mt-3">
+          <div class="row no-gutters w-100">
             <div class="col-12">
               <h5 class="card-title mb-0">Alicia Keys</h5>
             </div>
@@ -34,7 +34,7 @@ inputField.addEventListener('keyup', function (e) {
       </div>
     </div>
     `;
+    const img = document.querySelector('.alicia-keys');
+    img.addEventListener('click', showArtistPage);
   }
-  const img = document.querySelector('.alicia-keys');
-  img.addEventListener('click', showArtistPage);
 });
