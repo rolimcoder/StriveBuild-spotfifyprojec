@@ -37,7 +37,7 @@ const srcImgTop5 = [
 function showArtistPage() {
   jsEntryPoint.innerHTML = `<!-----------------Artist Page content-------------------------->    
 <!--Hero Section-->
-<div class="jumbotron pb-0 jumbotron-fluid d-flex justify-content-start align-items-end">
+<div class="jumbotron pb-0 jumbotron-fluid d-flex justify-content-start align-items-end animate__animated animate__faster animate__fadeInDown">
   <div class="col">
     <span>
     <i class="fas fa-certificate text-primary"></i>
@@ -48,7 +48,7 @@ function showArtistPage() {
   </div>
 </div>
 <!--End of jumbotron-->
-<div class="container-fluid">
+<div class="container-fluid animate__animated animate__faster animate__fadeInLeft">
   <div class="row justify-content-start align-items-center">
       
         <div class="d-flex">
@@ -98,7 +98,7 @@ function showArtistPage() {
     </div>
   </div>
   <!--Section Popular releases and artist pick-->        
-  <div class="row row-cols-1 row-cols-lg-2 pt-4 text-white">
+  <div class="row row-cols-1 row-cols-lg-2 pt-4 text-white animate__animated animate__faster animate__fadeInRight">
       <div class="col">
         
         <div class="container top-five-asrtist">

@@ -5,6 +5,7 @@ function getUserData() {
   const loginUserName = document.getElementById('loginUser');
   const loginUserTextName = loginUserName.value;
   userName.innerText = loginUserTextName;
+  home.classList.remove('animate__fadeOutLeft');
   login.classList.add('d-none');
   home.classList.remove('d-none');
   showHomePage();
