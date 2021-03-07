@@ -4,7 +4,7 @@ inputField.addEventListener('keyup', function (e) {
     e.preventDefault();
 
     jsEntryPoint.innerHTML = `
-    <div class="container-fluid p-3 vh-100">
+    <div class="container-fluid p-3 vh-100" style="cursor: pointer">
       <div class="row m-1 text-white my-border-light">
         <div class="col-12 col-lg-3 h-100">
           <img

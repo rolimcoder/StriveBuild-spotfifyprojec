@@ -265,32 +265,11 @@ function injectAlbumsInArtistPage() {
     )
     .join('');
 
-  /*     const { sectionName, albums } = section;
-    const sectionHTML = `
-  <section id="section-${idx + 1}" class="cards-section mb-5">
-    <h4 class="section-name text-white font-weight-bold mb-2 display-5 pl-2">${sectionName}</h4>
-    <div class="d-flex flex-md-wrap row-albums mb-4">
-        ${albums
-          .map(
-            (album) => `
-             <div class="px-2 mb-3">
-                <div class="card-custom shadow">
-                  <div class="card-image-wrapper d-flex flex-column p-2">
-                    <img src="${album.coverUrl}" class="img-fluid rounded" alt="" />
-                    <a href="#" class="card-play-btn align-self-end d-none"><i class="fas fa-play-circle fa-3x"></i></a>
-                    <a href="#" class="card-pause-btn align-self-end d-none"><i class="fas fa-pause-circle fa-3x"></i></a>
-                  </div>
-                  <div class="card-body-custom p-3">
-                    <h6 class="card-title-custom text-white text-truncate">${album.title}</h6>
-                    <p class="card-text-custom text-muted">random text</p>
-                  </div>
-                </div>
-              </div>
-        `
-          )
-          .join('')}
-    </div>
-  </section>
-  `; */
   entryPointForAlbums.insertAdjacentHTML('beforeend', coversHtml);
+  const cards = document.querySelectorAll('.card-custom');
+  cards.forEach((card) => {
+    card.addEventListener('click', getCardsInfo);
+    card.classList.remove('animate__fadeInUp');
+    card.classList.add('animate__fadeInUp');
+  });
 }
